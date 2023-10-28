@@ -1,0 +1,126 @@
+[
+  {
+    "key": "covid19-declaration",
+    "title": "COVID-19 Declaration",
+    "description": "Collect Covid-19 and let the form assess the risk",
+    "tags": [
+      "covid-19",
+      "risk",
+      "assessment"
+    ],
+    "image": "templates/covid19-declaration.png"
+  },
+  {
+    "key": "employee-timesheet",
+    "title": "Employee Timesheet",
+    "description": "Take tables and calculated fields to the next level with this template for time tracking!",
+    "tags": [
+      "timesheet",
+      "employee",
+      "time",
+      "tracking"
+    ],
+    "image": "templates/employee-timesheet.png"
+  },
+  {
+    "key": "equipment-inspection",
+    "title": "Equipment Inspection",
+    "description": "Take inspection photos of each item and see them uploaded to SharePoint!",
+    "tags": [
+      "inspection",
+      "equipment",
+      "sharepoint",
+      "photo",
+      "camera",
+      "image",
+      "picture"
+    ],
+    "image": "templates/equipment-inspection.png"
+  },
+  {
+    "key": "it-hardware-request",
+    "title": "IT Hardware Request",
+    "description": "Request specific IT hardware and ask more questions if somethings not availale",
+    "tags": [
+      "IT"
+    ],
+    "image": "templates/it-hardware-request.png"
+  },
+  {
+    "key": "maintenance-request",
+    "title": "Maintenance Request",
+    "description": "Request maintenance using the wizard",
+    "tags": [
+      "maintenance",
+      "wizard"
+    ],
+    "image": "templates/maintenance-request.png"
+  },
+  {
+    "key": "math-quiz",
+    "title": "Math Quiz",
+    "description": "This template shows how forms can be used in education as quizzes",
+    "tags": [
+      "education",
+      "quiz",
+      "math"
+    ],
+    "image": "templates/math-quiz.png"
+  },
+  {
+    "key": "procurement-request",
+    "title": "Procurement Request",
+    "description": "Procure multiple items in a single form and cap the spending limit at $1000",
+    "tags": [
+      "procurement",
+      "purchase",
+      "spending",
+      "budget"
+    ],
+    "image": "templates/procurement-request.png"
+  },
+  {
+    "key": "property-inspection-checklist",
+    "title": "Property Inspection",
+    "description": "Basic property inspection report allowing you to capture images and print them in the pdf",
+    "tags": [
+      "property",
+      "inspection"
+    ],
+    "image": "templates/property-inspection-checklist.png"
+  },
+  {
+    "key": "sick-leave-request",
+    "title": "Sick Leave Request",
+    "description": "Submit a leave request and request. You can trigger PowerAutomate to start a approval flow!",
+    "tags": [
+      "leave",
+      "sick"
+    ],
+    "image": "templates/sick-leave-request.png"
+  },
+  {
+    "key": "vehicle-inspection",
+    "title": "Vehicle Inspection",
+    "description": "This template pulls data from an automotive REST API and uses cascading selected boxes",
+    "tags": [
+      "vehicle",
+      "inspection",
+      "cascading",
+      "select boxes"
+    ],
+    "image": "templates/vehicle-inspection.png"
+  },
+  {
+    "key": "workplace-safety-training",
+    "title": "Work Place Safety Training Module",
+    "description": "This template shows you can build training modules as multi-page wizards",
+    "tags": [
+      "wizard",
+      "training",
+      "multi-page",
+      "module"
+    ],
+    "image": "templates/workplace-safety-training.png"
+  }
+]
