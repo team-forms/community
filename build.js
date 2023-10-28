@@ -52,7 +52,7 @@ async function buildTemplates(distServerPort) {
         const templateUrl = `http://localhost:${distServerPort}/templates/${file}`;
 
         const page = await browser.newPage();
-        await page.goto(`${appUrl}/templates/${encodeURIComponent(templateUrl)}/preview`);
+        await page.goto(`${appUrl}/templates/preview?url=${templateUrl}`);
         await page.waitForSelector('div.formio-form');
         await page.screenshot({ path: path.join(distTemplatesDir, file.replace('.json', '.png')) });
         await page.close();
