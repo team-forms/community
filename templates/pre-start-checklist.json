@@ -1,0 +1,2052 @@
+{
+    "title": "Pre-start Checklist",
+    "description": "Check your work site and promote safe work habits",
+    "tags": [
+        "safety",
+        "ohs",
+        "industrial"
+    ],
+    "responsesTitleTemplate": "Pre-start Checklist - {{ equipmentId }}",
+    "schema": {
+        "display": "form",
+        "components": [
+            {
+                "html": "<figure class=\"image image_resized\" style=\"width:24.5%;\"><img src=\"data:image/svg+xml;base64,PHN2ZyBpZD0ibG9nby01MCIgY2xhc3M9ImdyYWRpZW50IiB3aWR0aD0iMTUzIiBoZWlnaHQ9IjM4IiB2aWV3Qm94PSIwIDAgMTUzIDM4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPiA8cGF0aCBkPSJNMC44Nzg3ODUgMjguMTgxOEwwLjg3ODc4OCA5LjM5MzkzTDEwLjI3MjcgMTQuNjEyOEwxMC4yNzI3IDIzLjAxNTFMMTcuNzg3OSAyNy4yNDI0TDI1LjMwMyAyMy4wMTUxTDI1LjMwMyAxNC42MTI4TDM0LjY5NyA5LjM5MzkzTDM0LjY5NyAyOC4xODE4TDE3Ljc4NzkgMzcuNTc1N0wwLjg3ODc4NSAyOC4xODE4WiIgY2xhc3M9ImNuZXV0cmFsIiBmaWxsPSIjMTkyNjU3Ij48L3BhdGg+IDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNS41NzU3NiAxMi4wMDM0TDAuODc4Nzg0IDkuMzkzOTRMMTcuNzg3OSAwTDM0LjY5NyA5LjM5Mzk0TDMwIDEyLjAwMzRMMzAgMjUuODMzM0wxNy43ODc5IDMyLjg3ODhMNS41NzU3NSAyNS44MzMzTDUuNTc1NzYgMTIuMDAzNFpNMjkuNDkxMiAxMi4yODYxTDI1LjMwMyAxNC42MTI4VjE0LjU2MDZMMTcuNzg3OSAxMC4zMzMzTDEwLjI3MjcgMTQuNTYwNlYxNC42MTI4TDYuMDg0NTkgMTIuMjg2MUw2LjA4NDU5IDI1LjU0NDNMMTcuNzg3OSAzMi4yOTYyTDI5LjQ5MTIgMjUuNTQ0M0wyOS40OTEyIDEyLjI4NjFaIiBmaWxsPSJ1cmwoI3BhaW50NTAwX2xpbmVhcl8xNTAxXzEyNTkpIj48L3BhdGg+IDxwYXRoIGQ9Ik00My43MDAxIDI2LjY5N1YxMC45MTUySDQ2LjY3NjFWMjMuOTkxNUg1My44OTA3VjI2LjY5N0g0My43MDAxWiIgY2xhc3M9ImNuZXV0cmFsIiBmaWxsPSIjMTkyNjU3Ij48L3BhdGg+IDxwYXRoIGQ9Ik02MC4zMTU5IDI3LjAxMjZDNTkuMjAzNyAyNy4wMTI2IDU4LjIwNDIgMjYuNzg3MiA1Ny4zMTc0IDI2LjMzNjJDNTYuNDMwNiAyNS44ODUzIDU1LjczMTcgMjUuMjMxNSA1NS4yMjA3IDI0LjM3NDhDNTQuNzA5NiAyMy41MTgxIDU0LjQ1NDEgMjIuNDg4NSA1NC40NTQxIDIxLjI4NjFWMjAuOTI1M0M1NC40NTQxIDE5LjcyMjkgNTQuNzA5NiAxOC42OTMzIDU1LjIyMDcgMTcuODM2NkM1NS43MzE3IDE2Ljk3OTkgNTYuNDMwNiAxNi4zMjYxIDU3LjMxNzQgMTUuODc1MkM1OC4yMDQyIDE1LjQyNDIgNTkuMjAzNyAxNS4xOTg4IDYwLjMxNTkgMTUuMTk4OEM2MS40MjgyIDE1LjE5ODggNjIuNDI3NyAxNS40MjQyIDYzLjMxNDUgMTUuODc1MkM2NC4yMDEzIDE2LjMyNjEgNjQuOTAwMiAxNi45Nzk5IDY1LjQxMTIgMTcuODM2NkM2NS45MjIyIDE4LjY5MzMgNjYuMTc3OCAxOS43MjI5IDY2LjE3NzggMjAuOTI1M1YyMS4yODYxQzY2LjE3NzggMjIuNDg4NSA2NS45MjIyIDIzLjUxODEgNjUuNDExMiAyNC4zNzQ4QzY0LjkwMDIgMjUuMjMxNSA2NC4yMDEzIDI1Ljg4NTMgNjMuMzE0NSAyNi4zMzYyQzYyLjQyNzcgMjYuNzg3MiA2MS40MjgyIDI3LjAxMjYgNjAuMzE1OSAyNy4wMTI2Wk02MC4zMTU5IDI0LjQ4NzVDNjEuMTg3NyAyNC40ODc1IDYxLjkwOTIgMjQuMjA5NSA2Mi40ODAzIDIzLjY1MzNDNjMuMDUxNSAyMy4wODIyIDYzLjMzNyAyMi4yNzA1IDYzLjMzNyAyMS4yMTg0VjIwLjk5M0M2My4zMzcgMTkuOTQwOSA2My4wNTE1IDE5LjEzNjcgNjIuNDgwMyAxOC41ODA2QzYxLjkyNDIgMTguMDA5NSA2MS4yMDI3IDE3LjcyMzkgNjAuMzE1OSAxNy43MjM5QzU5LjQ0NDIgMTcuNzIzOSA1OC43MjI3IDE4LjAwOTUgNTguMTUxNiAxOC41ODA2QzU3LjU4MDQgMTkuMTM2NyA1Ny4yOTQ5IDE5Ljk0MDkgNTcuMjk0OSAyMC45OTNWMjEuMjE4NEM1Ny4yOTQ5IDIyLjI3MDUgNTcuNTgwNCAyMy4wODIyIDU4LjE1MTYgMjMuNjUzM0M1OC43MjI3IDI0LjIwOTUgNTkuNDQ0MiAyNC40ODc1IDYwLjMxNTkgMjQuNDg3NVoiIGNsYXNzPSJjbmV1dHJhbCIgZmlsbD0iIzE5MjY1NyI+PC9wYXRoPiA8cGF0aCBkPSJNNjcuMjQ0MyAyMS4xNTA4VjIwLjc5MDFDNjcuMjQ0MyAxOS42MTc3IDY3LjQ3NzIgMTguNjE4MiA2Ny45NDMyIDE3Ljc5MTVDNjguNDA5MSAxNi45NDk4IDY5LjAyNTQgMTYuMzExIDY5Ljc5MTkgMTUuODc1MkM3MC41NzM1IDE1LjQyNDIgNzEuNDIyNyAxNS4xOTg4IDcyLjMzOTUgMTUuMTk4OEM3My4zNjE2IDE1LjE5ODggNzQuMTM1NyAxNS4zNzkyIDc0LjY2MTcgMTUuNzM5OUM3NS4xODc4IDE2LjEwMDYgNzUuNTcxMSAxNi40NzY0IDc1LjgxMTUgMTYuODY3Mkg3Ni4yMTc0VjE1LjUxNDRINzkuMDEzVjI4LjY4MUM3OS4wMTMgMjkuNDQ3NSA3OC43ODc1IDMwLjA1NjIgNzguMzM2NiAzMC41MDcyQzc3Ljg4NTcgMzAuOTczMSA3Ny4yODQ1IDMxLjIwNjEgNzYuNTMzIDMxLjIwNjFINjkuMDQ3OVYyOC43MjYxSDc1LjU0MUM3NS45NjE4IDI4LjcyNjEgNzYuMTcyMyAyOC41MDA2IDc2LjE3MjMgMjguMDQ5N1YyNS4xNDEzSDc1Ljc2NjRDNzUuNjE2MSAyNS4zODE4IDc1LjQwNTcgMjUuNjI5OCA3NS4xMzUyIDI1Ljg4NTNDNzQuODY0NiAyNi4xMjU4IDc0LjUwMzkgMjYuMzI4NyA3NC4wNTMgMjYuNDk0MUM3My42MDIxIDI2LjY1OTQgNzMuMDMwOSAyNi43NDIxIDcyLjMzOTUgMjYuNzQyMUM3MS40MjI3IDI2Ljc0MjEgNzAuNTczNSAyNi41MjQxIDY5Ljc5MTkgMjYuMDg4MkM2OS4wMjU0IDI1LjYzNzMgNjguNDA5MSAyNC45OTg1IDY3Ljk0MzIgMjQuMTcxOUM2Ny40NzcyIDIzLjMzMDIgNjcuMjQ0MyAyMi4zMjMyIDY3LjI0NDMgMjEuMTUwOFpNNzMuMTUxMiAyNC4yNjIxQzc0LjAyMjkgMjQuMjYyMSA3NC43NTE5IDIzLjk4NCA3NS4zMzgxIDIzLjQyNzlDNzUuOTI0MyAyMi44NzE4IDc2LjIxNzQgMjIuMDkwMiA3Ni4yMTc0IDIxLjA4MzJWMjAuODU3N0M3Ni4yMTc0IDE5LjgzNTYgNzUuOTI0MyAxOS4wNTQxIDc1LjMzODEgMTguNTEzQzc0Ljc2NjkgMTcuOTU2OSA3NC4wMzggMTcuNjc4OCA3My4xNTEyIDE3LjY3ODhDNzIuMjc5NCAxNy42Nzg4IDcxLjU1MDQgMTcuOTU2OSA3MC45NjQzIDE4LjUxM0M3MC4zNzgxIDE5LjA1NDEgNzAuMDg1IDE5LjgzNTYgNzAuMDg1IDIwLjg1NzdWMjEuMDgzMkM3MC4wODUgMjIuMDkwMiA3MC4zNzgxIDIyLjg3MTggNzAuOTY0MyAyMy40Mjc5QzcxLjU1MDQgMjMuOTg0IDcyLjI3OTQgMjQuMjYyMSA3My4xNTEyIDI0LjI2MjFaIiBjbGFzcz0iY25ldXRyYWwiIGZpbGw9IiMxOTI2NTciPjwvcGF0aD4gPHBhdGggZD0iTTg2LjQ2ODcgMjcuMDEyNkM4NS4zNTY0IDI3LjAxMjYgODQuMzU2OSAyNi43ODcyIDgzLjQ3MDEgMjYuMzM2MkM4Mi41ODMzIDI1Ljg4NTMgODEuODg0NCAyNS4yMzE1IDgxLjM3MzQgMjQuMzc0OEM4MC44NjI0IDIzLjUxODEgODAuNjA2OSAyMi40ODg1IDgwLjYwNjkgMjEuMjg2MVYyMC45MjUzQzgwLjYwNjkgMTkuNzIyOSA4MC44NjI0IDE4LjY5MzMgODEuMzczNCAxNy44MzY2QzgxLjg4NDQgMTYuOTc5OSA4Mi41ODMzIDE2LjMyNjEgODMuNDcwMSAxNS44NzUyQzg0LjM1NjkgMTUuNDI0MiA4NS4zNTY0IDE1LjE5ODggODYuNDY4NyAxNS4xOTg4Qzg3LjU4MDkgMTUuMTk4OCA4OC41ODA0IDE1LjQyNDIgODkuNDY3MiAxNS44NzUyQzkwLjM1NCAxNi4zMjYxIDkxLjA1MjkgMTYuOTc5OSA5MS41NjM5IDE3LjgzNjZDOTIuMDc1IDE4LjY5MzMgOTIuMzMwNSAxOS43MjI5IDkyLjMzMDUgMjAuOTI1M1YyMS4yODYxQzkyLjMzMDUgMjIuNDg4NSA5Mi4wNzUgMjMuNTE4MSA5MS41NjM5IDI0LjM3NDhDOTEuMDUyOSAyNS4yMzE1IDkwLjM1NCAyNS44ODUzIDg5LjQ2NzIgMjYuMzM2MkM4OC41ODA0IDI2Ljc4NzIgODcuNTgwOSAyNy4wMTI2IDg2LjQ2ODcgMjcuMDEyNlpNODYuNDY4NyAyNC40ODc1Qzg3LjM0MDQgMjQuNDg3NSA4OC4wNjE5IDI0LjIwOTUgODguNjMzIDIzLjY1MzNDODkuMjA0MiAyMy4wODIyIDg5LjQ4OTggMjIuMjcwNSA4OS40ODk4IDIxLjIxODRWMjAuOTkzQzg5LjQ4OTggMTkuOTQwOSA4OS4yMDQyIDE5LjEzNjcgODguNjMzIDE4LjU4MDZDODguMDc2OSAxOC4wMDk1IDg3LjM1NTUgMTcuNzIzOSA4Ni40Njg3IDE3LjcyMzlDODUuNTk2OSAxNy43MjM5IDg0Ljg3NTUgMTguMDA5NSA4NC4zMDQzIDE4LjU4MDZDODMuNzMzMiAxOS4xMzY3IDgzLjQ0NzYgMTkuOTQwOSA4My40NDc2IDIwLjk5M1YyMS4yMTg0QzgzLjQ0NzYgMjIuMjcwNSA4My43MzMyIDIzLjA4MjIgODQuMzA0MyAyMy42NTMzQzg0Ljg3NTUgMjQuMjA5NSA4NS41OTY5IDI0LjQ4NzUgODYuNDY4NyAyNC40ODc1WiIgY2xhc3M9ImNuZXV0cmFsIiBmaWxsPSIjMTkyNjU3Ij48L3BhdGg+IDxwYXRoIGQ9Ik05My45MzgxIDI2LjY5N1YxNS41MTQ0SDk2Ljc3ODhWMjYuNjk3SDkzLjkzODFaTTk1LjM1ODQgMTQuMjA2OEM5NC44NDc0IDE0LjIwNjggOTQuNDExNSAxNC4wNDE1IDk0LjA1MDggMTMuNzEwOEM5My43MDUxIDEzLjM4MDEgOTMuNTMyMyAxMi45NDQyIDkzLjUzMjMgMTIuNDAzMkM5My41MzIzIDExLjg2MjEgOTMuNzA1MSAxMS40MjYyIDk0LjA1MDggMTEuMDk1NUM5NC40MTE1IDEwLjc2NDkgOTQuODQ3NCAxMC41OTk1IDk1LjM1ODQgMTAuNTk5NUM5NS44ODQ1IDEwLjU5OTUgOTYuMzIwNCAxMC43NjQ5IDk2LjY2NjEgMTEuMDk1NUM5Ny4wMTE4IDExLjQyNjIgOTcuMTg0NiAxMS44NjIxIDk3LjE4NDYgMTIuNDAzMkM5Ny4xODQ2IDEyLjk0NDIgOTcuMDExOCAxMy4zODAxIDk2LjY2NjEgMTMuNzEwOEM5Ni4zMjA0IDE0LjA0MTUgOTUuODg0NSAxNC4yMDY4IDk1LjM1ODQgMTQuMjA2OFoiIGNsYXNzPSJjbmV1dHJhbCIgZmlsbD0iIzE5MjY1NyI+PC9wYXRoPiA8cGF0aCBkPSJNOTguOTEyMiAzMS4yMDYxVjE1LjUxNDRIMTAxLjcwOFYxNi44NjcySDEwMi4xMTRDMTAyLjM2OSAxNi40MzEzIDEwMi43NjcgMTYuMDQ4IDEwMy4zMDkgMTUuNzE3M0MxMDMuODUgMTUuMzcxNiAxMDQuNjI0IDE1LjE5ODggMTA1LjYzMSAxNS4xOTg4QzEwNi41MzMgMTUuMTk4OCAxMDcuMzY3IDE1LjQyNDIgMTA4LjEzMyAxNS44NzUyQzEwOC45IDE2LjMxMSAxMDkuNTE2IDE2Ljk1NzMgMTA5Ljk4MiAxNy44MTQxQzExMC40NDggMTguNjcwOCAxMTAuNjgxIDE5LjcwNzkgMTEwLjY4MSAyMC45MjUzVjIxLjI4NjFDMTEwLjY4MSAyMi41MDM1IDExMC40NDggMjMuNTQwNiAxMDkuOTgyIDI0LjM5NzNDMTA5LjUxNiAyNS4yNTQxIDEwOC45IDI1LjkwNzkgMTA4LjEzMyAyNi4zNTg4QzEwNy4zNjcgMjYuNzk0NyAxMDYuNTMzIDI3LjAxMjYgMTA1LjYzMSAyNy4wMTI2QzEwNC45NTQgMjcuMDEyNiAxMDQuMzgzIDI2LjkyOTkgMTAzLjkxNyAyNi43NjQ2QzEwMy40NjYgMjYuNjE0MyAxMDMuMDk4IDI2LjQxODkgMTAyLjgxMyAyNi4xNzg0QzEwMi41NDIgMjUuOTIyOSAxMDIuMzI0IDI1LjY2NzQgMTAyLjE1OSAyNS40MTE5SDEwMS43NTNWMzEuMjA2MUg5OC45MTIyWk0xMDQuNzc0IDI0LjUzMjZDMTA1LjY2MSAyNC41MzI2IDEwNi4zOSAyNC4yNTQ1IDEwNi45NjEgMjMuNjk4NEMxMDcuNTQ3IDIzLjEyNzMgMTA3Ljg0IDIyLjMwMDYgMTA3Ljg0IDIxLjIxODRWMjAuOTkzQzEwNy44NCAxOS45MTA4IDEwNy41NDcgMTkuMDkxNiAxMDYuOTYxIDE4LjUzNTVDMTA2LjM3NSAxNy45NjQ0IDEwNS42NDYgMTcuNjc4OCAxMDQuNzc0IDE3LjY3ODhDMTAzLjkwMiAxNy42Nzg4IDEwMy4xNzMgMTcuOTY0NCAxMDIuNTg3IDE4LjUzNTVDMTAyLjAwMSAxOS4wOTE2IDEwMS43MDggMTkuOTEwOCAxMDEuNzA4IDIwLjk5M1YyMS4yMTg0QzEwMS43MDggMjIuMzAwNiAxMDIuMDAxIDIzLjEyNzMgMTAyLjU4NyAyMy42OTg0QzEwMy4xNzMgMjQuMjU0NSAxMDMuOTAyIDI0LjUzMjYgMTA0Ljc3NCAyNC41MzI2WiIgY2xhc3M9ImNuZXV0cmFsIiBmaWxsPSIjMTkyNjU3Ij48L3BhdGg+IDxwYXRoIGQ9Ik0xMTYuOTE5IDI3LjAxMjZDMTE1LjQ2MSAyNy4wMTI2IDExNC4yNjYgMjYuNjk3IDExMy4zMzQgMjYuMDY1N0MxMTIuNDAzIDI1LjQzNDQgMTExLjgzOSAyNC41MzI2IDExMS42NDMgMjMuMzYwMkwxMTQuMjU5IDIyLjY4MzlDMTE0LjM2NCAyMy4yMDk5IDExNC41MzcgMjMuNjIzMyAxMTQuNzc3IDIzLjkyMzlDMTE1LjAzMyAyNC4yMjQ1IDExNS4zNDEgMjQuNDQyNCAxMTUuNzAyIDI0LjU3NzdDMTE2LjA3NyAyNC42OTc5IDExNi40ODMgMjQuNzU4MSAxMTYuOTE5IDI0Ljc1ODFDMTE3LjU4IDI0Ljc1ODEgMTE4LjA2OSAyNC42NDUzIDExOC4zODUgMjQuNDE5OUMxMTguNyAyNC4xNzk0IDExOC44NTggMjMuODg2MyAxMTguODU4IDIzLjU0MDZDMTE4Ljg1OCAyMy4xOTQ5IDExOC43MDggMjIuOTMxOSAxMTguNDA3IDIyLjc1MTVDMTE4LjEwNyAyMi41NTYxIDExNy42MjYgMjIuMzk4MyAxMTYuOTY0IDIyLjI3ODFMMTE2LjMzMyAyMi4xNjUzQzExNS41NTEgMjIuMDE1IDExNC44MzcgMjEuODEyMSAxMTQuMTkxIDIxLjU1NjZDMTEzLjU0NSAyMS4yODYxIDExMy4wMjYgMjAuOTE3OCAxMTIuNjM1IDIwLjQ1MTlDMTEyLjI0NSAxOS45ODU5IDExMi4wNDkgMTkuMzg0NyAxMTIuMDQ5IDE4LjY0ODJDMTEyLjA0OSAxNy41MzYgMTEyLjQ1NSAxNi42ODY4IDExMy4yNjcgMTYuMTAwNkMxMTQuMDc4IDE1LjQ5OTQgMTE1LjE0NiAxNS4xOTg4IDExNi40NjggMTUuMTk4OEMxMTcuNzE2IDE1LjE5ODggMTE4Ljc1MyAxNS40NzY5IDExOS41NzkgMTYuMDMzQzEyMC40MDYgMTYuNTg5MSAxMjAuOTQ3IDE3LjMxODEgMTIxLjIwMyAxOC4yMTk5TDExOC41NjUgMTkuMDMxNUMxMTguNDQ1IDE4LjQ2MDQgMTE4LjE5NyAxOC4wNTQ1IDExNy44MjEgMTcuODE0MUMxMTcuNDYgMTcuNTczNiAxMTcuMDA5IDE3LjQ1MzMgMTE2LjQ2OCAxNy40NTMzQzExNS45MjcgMTcuNDUzMyAxMTUuNTE0IDE3LjU1MSAxMTUuMjI4IDE3Ljc0NjRDMTE0Ljk0MyAxNy45MjY4IDExNC44IDE4LjE4MjMgMTE0LjggMTguNTEzQzExNC44IDE4Ljg3MzcgMTE0Ljk1IDE5LjE0NDIgMTE1LjI1MSAxOS4zMjQ2QzExNS41NTEgMTkuNDg5OSAxMTUuOTU3IDE5LjYxNzcgMTE2LjQ2OCAxOS43MDc5TDExNy4wOTkgMTkuODIwNkMxMTcuOTQxIDE5Ljk3MDkgMTE4LjcgMjAuMTczOCAxMTkuMzc3IDIwLjQyOTNDMTIwLjA2OCAyMC42Njk4IDEyMC42MDkgMjEuMDIzIDEyMSAyMS40ODlDMTIxLjQwNiAyMS45Mzk5IDEyMS42MDkgMjIuNTU2MSAxMjEuNjA5IDIzLjMzNzdDMTIxLjYwOSAyNC41MTAxIDEyMS4xOCAyNS40MTk0IDEyMC4zMjMgMjYuMDY1N0MxMTkuNDgyIDI2LjY5NyAxMTguMzQ3IDI3LjAxMjYgMTE2LjkxOSAyNy4wMTI2WiIgY2xhc3M9ImNuZXV0cmFsIiBmaWxsPSIjMTkyNjU3Ij48L3BhdGg+IDxwYXRoIGQ9Ik0xMjcuMzQ0IDI2Ljg3NzNDMTI2LjQ3MyAyNi44NzczIDEyNS43MDYgMjYuNjgxOSAxMjUuMDQ1IDI2LjI5MTJDMTI0LjM5OSAyNS44ODUzIDEyMy44OTUgMjUuMzI5MiAxMjMuNTM0IDI0LjYyMjhDMTIzLjE3NCAyMy45MTY0IDEyMi45OTMgMjMuMTA0NyAxMjIuOTkzIDIyLjE4NzlWMTUuNTE0NEgxMjUuODM0VjIxLjk2MjRDMTI1LjgzNCAyMi44MDQxIDEyNi4wMzcgMjMuNDM1NCAxMjYuNDQzIDIzLjg1NjJDMTI2Ljg2MyAyNC4yNzcxIDEyNy40NTcgMjQuNDg3NSAxMjguMjI0IDI0LjQ4NzVDMTI5LjA5NSAyNC40ODc1IDEyOS43NzIgMjQuMjAxOSAxMzAuMjUzIDIzLjYzMDhDMTMwLjczNCAyMy4wNDQ2IDEzMC45NzQgMjIuMjMzIDEzMC45NzQgMjEuMTk1OVYxNS41MTQ0SDEzMy44MTVWMjYuNjk3SDEzMS4wMTlWMjUuMjMxNUgxMzAuNjE0QzEzMC40MzMgMjUuNjA3MyAxMzAuMDk1IDI1Ljk3NTUgMTI5LjU5OSAyNi4zMzYyQzEyOS4xMDMgMjYuNjk3IDEyOC4zNTEgMjYuODc3MyAxMjcuMzQ0IDI2Ljg3NzNaIiBjbGFzcz0iY25ldXRyYWwiIGZpbGw9IiMxOTI2NTciPjwvcGF0aD4gPHBhdGggZD0iTTEzNS45NjIgMjYuNjk3VjE1LjUxNDRIMTM4Ljc1N1YxNi43MzE5SDEzOS4xNjNDMTM5LjM1OCAxNi4zNTYxIDEzOS42ODIgMTYuMDMzIDE0MC4xMzIgMTUuNzYyNEMxNDAuNTgzIDE1LjQ3NjkgMTQxLjE3NyAxNS4zMzQxIDE0MS45MTQgMTUuMzM0MUMxNDIuNzEgMTUuMzM0MSAxNDMuMzQ5IDE1LjQ5MTkgMTQzLjgzIDE1LjgwNzVDMTQ0LjMxMSAxNi4xMDgxIDE0NC42NzkgMTYuNTA2NCAxNDQuOTM1IDE3LjAwMjRIMTQ1LjM0QzE0NS41OTYgMTYuNTIxNSAxNDUuOTU3IDE2LjEyMzIgMTQ2LjQyMyAxNS44MDc1QzE0Ni44ODkgMTUuNDkxOSAxNDcuNTUgMTUuMzM0MSAxNDguNDA3IDE1LjMzNDFDMTQ5LjA5OCAxNS4zMzQxIDE0OS43MjIgMTUuNDg0NCAxNTAuMjc4IDE1Ljc4NUMxNTAuODQ5IDE2LjA3MDUgMTUxLjMgMTYuNTEzOSAxNTEuNjMxIDE3LjExNTJDMTUxLjk3NiAxNy43MDEzIDE1Mi4xNDkgMTguNDQ1MyAxNTIuMTQ5IDE5LjM0NzJWMjYuNjk3SDE0OS4zMDhWMTkuNTUwMUMxNDkuMzA4IDE4LjkzMzggMTQ5LjE1MSAxOC40NzU0IDE0OC44MzUgMTguMTc0OEMxNDguNTE5IDE3Ljg1OTIgMTQ4LjA3NiAxNy43MDEzIDE0Ny41MDUgMTcuNzAxM0MxNDYuODU5IDE3LjcwMTMgMTQ2LjM1NSAxNy45MTE4IDE0NS45OTQgMTguMzMyNkMxNDUuNjQ5IDE4LjczODQgMTQ1LjQ3NiAxOS4zMjQ2IDE0NS40NzYgMjAuMDkxMlYyNi42OTdIMTQyLjYzNVYxOS41NTAxQzE0Mi42MzUgMTguOTMzOCAxNDIuNDc3IDE4LjQ3NTQgMTQyLjE2MiAxOC4xNzQ4QzE0MS44NDYgMTcuODU5MiAxNDEuNDAzIDE3LjcwMTMgMTQwLjgzMSAxNy43MDEzQzE0MC4xODUgMTcuNzAxMyAxMzkuNjgyIDE3LjkxMTggMTM5LjMyMSAxOC4zMzI2QzEzOC45NzUgMTguNzM4NCAxMzguODAyIDE5LjMyNDYgMTM4LjgwMiAyMC4wOTEyVjI2LjY5N0gxMzUuOTYyWiIgY2xhc3M9ImNuZXV0cmFsIiBmaWxsPSIjMTkyNjU3Ij48L3BhdGg+IDxkZWZzPiA8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50NTAwX2xpbmVhcl8xNTAxXzEyNTkiIHgxPSI1LjU3NTc1IiB5MT0iNy4zMDYzOCIgeDI9IjMwLjkzOTQiIHkyPSI3LjMwNjM5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+IDxzdG9wIGNsYXNzPSJjY3VzdG9tIiBzdG9wLWNvbG9yPSIjNjRDMkRCIj48L3N0b3A+IDxzdG9wIG9mZnNldD0iMC4zMDcyOTIiIGNsYXNzPSJjY29tcGxpMSIgc3RvcC1jb2xvcj0iIzc0NzZFRCI+PC9zdG9wPiA8c3RvcCBvZmZzZXQ9IjAuNjA0MTY3IiBjbGFzcz0iY2NvbXBsaTEiIHN0b3AtY29sb3I9IiNDOTk0REYiPjwvc3RvcD4gPHN0b3Agb2Zmc2V0PSIxIiBjbGFzcz0iY2NvbXBsaTIiIHN0b3AtY29sb3I9IiNFNTZGOEMiPjwvc3RvcD4gPC9saW5lYXJHcmFkaWVudD4gPC9kZWZzPiA8L3N2Zz4=\"></figure>",
+                "label": "Content",
+                "customClass": "",
+                "refreshOnChange": false,
+                "hidden": false,
+                "hiddenInPdf": false,
+                "modalEdit": false,
+                "key": "content",
+                "tags": [],
+                "properties": {},
+                "conditional": {
+                    "show": null,
+                    "when": null,
+                    "eq": "",
+                    "json": ""
+                },
+                "customConditional": "",
+                "logic": [],
+                "attributes": {},
+                "creatorPermissions": "",
+                "permissions": [
+                    {
+                        "user": {},
+                        "permissionLevel": ""
+                    }
+                ],
+                "type": "content",
+                "input": false,
+                "placeholder": "",
+                "prefix": "",
+                "suffix": "",
+                "multiple": false,
+                "defaultValue": null,
+                "protected": false,
+                "unique": false,
+                "persistent": true,
+                "clearOnHide": true,
+                "refreshOn": "",
+                "redrawOn": "",
+                "tableView": false,
+                "dataGridLabel": false,
+                "labelPosition": "top",
+                "description": "",
+                "errorLabel": "",
+                "tooltip": "",
+                "hideLabel": false,
+                "tabindex": "",
+                "disabled": false,
+                "autofocus": false,
+                "dbIndex": false,
+                "customDefaultValue": "",
+                "calculateValue": "",
+                "calculateServer": false,
+                "widget": null,
+                "validateOn": "change",
+                "validate": {
+                    "required": false,
+                    "custom": "",
+                    "customPrivate": false,
+                    "strictDateValidation": false,
+                    "multiple": false,
+                    "unique": false
+                },
+                "overlay": {
+                    "style": "",
+                    "left": "",
+                    "top": "",
+                    "width": "",
+                    "height": ""
+                },
+                "allowCalculateOverride": false,
+                "encrypted": false,
+                "showCharCount": false,
+                "showWordCount": false,
+                "allowMultipleMasks": false,
+                "addons": []
+            },
+            {
+                "label": "Tabs",
+                "components": [
+                    {
+                        "label": "Pre-Flight Check List",
+                        "key": "preFlightCheckList",
+                        "components": [
+                            {
+                                "label": "Columns",
+                                "columns": [
+                                    {
+                                        "components": [
+                                            {
+                                                "label": "Pilot in Command",
+                                                "hiddenInPdf": false,
+                                                "tableView": true,
+                                                "key": "pilotInCommand",
+                                                "permissions": [
+                                                    {
+                                                        "user": {},
+                                                        "permissionLevel": ""
+                                                    }
+                                                ],
+                                                "type": "textfield",
+                                                "input": true,
+                                                "placeholder": "",
+                                                "prefix": "",
+                                                "customClass": "",
+                                                "suffix": "",
+                                                "multiple": false,
+                                                "defaultValue": null,
+                                                "protected": false,
+                                                "unique": false,
+                                                "persistent": true,
+                                                "hidden": false,
+                                                "clearOnHide": true,
+                                                "refreshOn": "",
+                                                "redrawOn": "",
+                                                "modalEdit": false,
+                                                "dataGridLabel": false,
+                                                "labelPosition": "top",
+                                                "description": "",
+                                                "errorLabel": "",
+                                                "tooltip": "",
+                                                "hideLabel": false,
+                                                "tabindex": "",
+                                                "disabled": false,
+                                                "autofocus": false,
+                                                "dbIndex": false,
+                                                "customDefaultValue": "",
+                                                "calculateValue": "",
+                                                "calculateServer": false,
+                                                "widget": {
+                                                    "type": "input"
+                                                },
+                                                "attributes": {},
+                                                "validateOn": "change",
+                                                "validate": {
+                                                    "required": false,
+                                                    "custom": "",
+                                                    "customPrivate": false,
+                                                    "strictDateValidation": false,
+                                                    "multiple": false,
+                                                    "unique": false,
+                                                    "minLength": "",
+                                                    "maxLength": "",
+                                                    "pattern": ""
+                                                },
+                                                "conditional": {
+                                                    "show": null,
+                                                    "when": null,
+                                                    "eq": ""
+                                                },
+                                                "overlay": {
+                                                    "style": "",
+                                                    "left": "",
+                                                    "top": "",
+                                                    "width": "",
+                                                    "height": ""
+                                                },
+                                                "allowCalculateOverride": false,
+                                                "encrypted": false,
+                                                "showCharCount": false,
+                                                "showWordCount": false,
+                                                "properties": {},
+                                                "allowMultipleMasks": false,
+                                                "addons": [],
+                                                "mask": false,
+                                                "inputType": "text",
+                                                "inputFormat": "plain",
+                                                "inputMask": "",
+                                                "displayMask": "",
+                                                "spellcheck": true,
+                                                "truncateMultipleSpaces": false
+                                            },
+                                            {
+                                                "label": "Observer",
+                                                "hiddenInPdf": false,
+                                                "tableView": true,
+                                                "key": "observer",
+                                                "permissions": [
+                                                    {
+                                                        "user": {},
+                                                        "permissionLevel": ""
+                                                    }
+                                                ],
+                                                "type": "textfield",
+                                                "input": true,
+                                                "placeholder": "",
+                                                "prefix": "",
+                                                "customClass": "",
+                                                "suffix": "",
+                                                "multiple": false,
+                                                "defaultValue": null,
+                                                "protected": false,
+                                                "unique": false,
+                                                "persistent": true,
+                                                "hidden": false,
+                                                "clearOnHide": true,
+                                                "refreshOn": "",
+                                                "redrawOn": "",
+                                                "modalEdit": false,
+                                                "dataGridLabel": false,
+                                                "labelPosition": "top",
+                                                "description": "",
+                                                "errorLabel": "",
+                                                "tooltip": "",
+                                                "hideLabel": false,
+                                                "tabindex": "",
+                                                "disabled": false,
+                                                "autofocus": false,
+                                                "dbIndex": false,
+                                                "customDefaultValue": "",
+                                                "calculateValue": "",
+                                                "calculateServer": false,
+                                                "widget": {
+                                                    "type": "input"
+                                                },
+                                                "attributes": {},
+                                                "validateOn": "change",
+                                                "validate": {
+                                                    "required": false,
+                                                    "custom": "",
+                                                    "customPrivate": false,
+                                                    "strictDateValidation": false,
+                                                    "multiple": false,
+                                                    "unique": false,
+                                                    "minLength": "",
+                                                    "maxLength": "",
+                                                    "pattern": ""
+                                                },
+                                                "conditional": {
+                                                    "show": null,
+                                                    "when": null,
+                                                    "eq": ""
+                                                },
+                                                "overlay": {
+                                                    "style": "",
+                                                    "left": "",
+                                                    "top": "",
+                                                    "width": "",
+                                                    "height": ""
+                                                },
+                                                "allowCalculateOverride": false,
+                                                "encrypted": false,
+                                                "showCharCount": false,
+                                                "showWordCount": false,
+                                                "properties": {},
+                                                "allowMultipleMasks": false,
+                                                "addons": [],
+                                                "mask": false,
+                                                "inputType": "text",
+                                                "inputFormat": "plain",
+                                                "inputMask": "",
+                                                "displayMask": "",
+                                                "spellcheck": true,
+                                                "truncateMultipleSpaces": false
+                                            },
+                                            {
+                                                "label": "Date / Time",
+                                                "hiddenInPdf": false,
+                                                "tableView": false,
+                                                "datePicker": {
+                                                    "disableWeekends": false,
+                                                    "disableWeekdays": false,
+                                                    "showWeeks": true,
+                                                    "startingDay": 0,
+                                                    "initDate": "",
+                                                    "minMode": "day",
+                                                    "maxMode": "year",
+                                                    "yearRows": 4,
+                                                    "yearColumns": 5,
+                                                    "minDate": null,
+                                                    "maxDate": null
+                                                },
+                                                "enableMinDateInput": false,
+                                                "enableMaxDateInput": false,
+                                                "key": "dateTime",
+                                                "permissions": [
+                                                    {
+                                                        "user": {},
+                                                        "permissionLevel": ""
+                                                    }
+                                                ],
+                                                "type": "datetime",
+                                                "input": true,
+                                                "widget": {
+                                                    "type": "calendar",
+                                                    "displayInTimezone": "viewer",
+                                                    "locale": "en",
+                                                    "useLocaleSettings": false,
+                                                    "allowInput": true,
+                                                    "mode": "single",
+                                                    "enableTime": true,
+                                                    "noCalendar": false,
+                                                    "format": "yyyy-MM-dd hh:mm a",
+                                                    "hourIncrement": 1,
+                                                    "minuteIncrement": 1,
+                                                    "time_24hr": false,
+                                                    "minDate": null,
+                                                    "disableWeekends": false,
+                                                    "disableWeekdays": false,
+                                                    "maxDate": null
+                                                },
+                                                "placeholder": "",
+                                                "prefix": "",
+                                                "customClass": "",
+                                                "suffix": "",
+                                                "multiple": false,
+                                                "defaultValue": "",
+                                                "protected": false,
+                                                "unique": false,
+                                                "persistent": true,
+                                                "hidden": false,
+                                                "clearOnHide": true,
+                                                "refreshOn": "",
+                                                "redrawOn": "",
+                                                "modalEdit": false,
+                                                "dataGridLabel": false,
+                                                "labelPosition": "top",
+                                                "description": "",
+                                                "errorLabel": "",
+                                                "tooltip": "",
+                                                "hideLabel": false,
+                                                "tabindex": "",
+                                                "disabled": false,
+                                                "autofocus": false,
+                                                "dbIndex": false,
+                                                "customDefaultValue": "",
+                                                "calculateValue": "",
+                                                "calculateServer": false,
+                                                "attributes": {},
+                                                "validateOn": "change",
+                                                "validate": {
+                                                    "required": false,
+                                                    "custom": "",
+                                                    "customPrivate": false,
+                                                    "strictDateValidation": false,
+                                                    "multiple": false,
+                                                    "unique": false
+                                                },
+                                                "conditional": {
+                                                    "show": null,
+                                                    "when": null,
+                                                    "eq": ""
+                                                },
+                                                "overlay": {
+                                                    "style": "",
+                                                    "left": "",
+                                                    "top": "",
+                                                    "width": "",
+                                                    "height": ""
+                                                },
+                                                "allowCalculateOverride": false,
+                                                "encrypted": false,
+                                                "showCharCount": false,
+                                                "showWordCount": false,
+                                                "properties": {},
+                                                "allowMultipleMasks": false,
+                                                "addons": [],
+                                                "format": "yyyy-MM-dd hh:mm a",
+                                                "useLocaleSettings": false,
+                                                "allowInput": true,
+                                                "enableDate": true,
+                                                "enableTime": true,
+                                                "defaultDate": "",
+                                                "displayInTimezone": "viewer",
+                                                "timezone": "",
+                                                "datepickerMode": "day",
+                                                "timePicker": {
+                                                    "hourStep": 1,
+                                                    "minuteStep": 1,
+                                                    "showMeridian": true,
+                                                    "readonlyInput": false,
+                                                    "mousewheel": true,
+                                                    "arrowkeys": true
+                                                },
+                                                "customOptions": {}
+                                            },
+                                            {
+                                                "label": "Drone Model",
+                                                "widget": "choicesjs",
+                                                "hiddenInPdf": false,
+                                                "tableView": true,
+                                                "data": {
+                                                    "values": [
+                                                        {
+                                                            "value": "DJI Mavic Air 2",
+                                                            "label": "DJI Mavic Air 2"
+                                                        },
+                                                        {
+                                                            "value": "DJI Mavic Mini",
+                                                            "label": "DJI Mavic Mini"
+                                                        },
+                                                        {
+                                                            "value": "DJI Mavic Pro",
+                                                            "label": "DJI Mavic Pro"
+                                                        },
+                                                        {
+                                                            "value": "DJI Phantom 4 Pro",
+                                                            "label": "DJI Phantom 4 Pro"
+                                                        },
+                                                        {
+                                                            "value": "DJI Inspire 2",
+                                                            "label": "DJI Inspire 2"
+                                                        },
+                                                        {
+                                                            "value": "DJI Spark",
+                                                            "label": "DJI Spark"
+                                                        },
+                                                        {
+                                                            "value": "Autel Robotics EVO Lite+",
+                                                            "label": "Autel Robotics EVO Lite+"
+                                                        },
+                                                        {
+                                                            "value": "Autel Robotics EVO Lite",
+                                                            "label": "Autel Robotics EVO Lite"
+                                                        },
+                                                        {
+                                                            "value": "Autel Robotics EVO II",
+                                                            "label": "Autel Robotics EVO II"
+                                                        },
+                                                        {
+                                                            "value": "Parrot Anafi",
+                                                            "label": "Parrot Anafi"
+                                                        },
+                                                        {
+                                                            "value": "Parrot Bebop 2",
+                                                            "label": "Parrot Bebop 2"
+                                                        },
+                                                        {
+                                                            "value": "Yuneec Typhoon H Pro",
+                                                            "label": "Yuneec Typhoon H Pro"
+                                                        },
+                                                        {
+                                                            "value": "Yuneec Mantis Q",
+                                                            "label": "Yuneec Mantis Q"
+                                                        },
+                                                        {
+                                                            "value": "Skydio 2",
+                                                            "label": "Skydio 2"
+                                                        },
+                                                        {
+                                                            "value": "Autel Robotics X-Star Premium",
+                                                            "label": "Autel Robotics X-Star Premium"
+                                                        },
+                                                        {
+                                                            "value": "Hubsan X4 H107D",
+                                                            "label": "Hubsan X4 H107D"
+                                                        },
+                                                        {
+                                                            "value": "Holy Stone HS100",
+                                                            "label": "Holy Stone HS100"
+                                                        },
+                                                        {
+                                                            "value": "Ryze Tello",
+                                                            "label": "Ryze Tello"
+                                                        },
+                                                        {
+                                                            "value": "Potensic D88",
+                                                            "label": "Potensic D88"
+                                                        },
+                                                        {
+                                                            "value": "Force1 F100 Ghost",
+                                                            "label": "Force1 F100 Ghost"
+                                                        }
+                                                    ],
+                                                    "label": "Drop Down List",
+                                                    "json": "",
+                                                    "url": "",
+                                                    "resource": "",
+                                                    "custom": ""
+                                                },
+                                                "key": "uasModel",
+                                                "permissions": [
+                                                    {
+                                                        "user": {},
+                                                        "permissionLevel": ""
+                                                    }
+                                                ],
+                                                "type": "select",
+                                                "input": true,
+                                                "placeholder": "",
+                                                "prefix": "",
+                                                "customClass": "",
+                                                "suffix": "",
+                                                "multiple": false,
+                                                "defaultValue": null,
+                                                "protected": false,
+                                                "unique": false,
+                                                "persistent": true,
+                                                "hidden": false,
+                                                "clearOnHide": true,
+                                                "refreshOn": "",
+                                                "redrawOn": "",
+                                                "modalEdit": false,
+                                                "dataGridLabel": false,
+                                                "labelPosition": "top",
+                                                "description": "",
+                                                "errorLabel": "",
+                                                "tooltip": "",
+                                                "hideLabel": false,
+                                                "tabindex": "",
+                                                "disabled": false,
+                                                "autofocus": false,
+                                                "dbIndex": false,
+                                                "customDefaultValue": "",
+                                                "calculateValue": "",
+                                                "calculateServer": false,
+                                                "attributes": {},
+                                                "validateOn": "change",
+                                                "validate": {
+                                                    "required": false,
+                                                    "custom": "",
+                                                    "customPrivate": false,
+                                                    "strictDateValidation": false,
+                                                    "multiple": false,
+                                                    "unique": false,
+                                                    "onlyAvailableItems": false
+                                                },
+                                                "conditional": {
+                                                    "show": null,
+                                                    "when": null,
+                                                    "eq": ""
+                                                },
+                                                "overlay": {
+                                                    "style": "",
+                                                    "left": "",
+                                                    "top": "",
+                                                    "width": "",
+                                                    "height": ""
+                                                },
+                                                "allowCalculateOverride": false,
+                                                "encrypted": false,
+                                                "showCharCount": false,
+                                                "showWordCount": false,
+                                                "properties": {},
+                                                "allowMultipleMasks": false,
+                                                "addons": [],
+                                                "idPath": "id",
+                                                "clearOnRefresh": false,
+                                                "limit": 100,
+                                                "dataSrc": "values",
+                                                "valueProperty": "",
+                                                "lazyLoad": true,
+                                                "filter": "",
+                                                "searchEnabled": true,
+                                                "searchDebounce": 0.3,
+                                                "searchField": "",
+                                                "minSearch": 0,
+                                                "readOnlyValue": false,
+                                                "authenticate": false,
+                                                "ignoreCache": false,
+                                                "template": "<span>{{ item.label }}</span>",
+                                                "selectFields": "",
+                                                "selectThreshold": 0.3,
+                                                "uniqueOptions": false,
+                                                "fuseOptions": {
+                                                    "include": "score",
+                                                    "threshold": 0.3
+                                                },
+                                                "indexeddb": {
+                                                    "filter": {}
+                                                },
+                                                "customOptions": {},
+                                                "useExactSearch": false
+                                            }
+                                        ],
+                                        "width": 6,
+                                        "offset": 0,
+                                        "push": 0,
+                                        "pull": 0,
+                                        "size": "md",
+                                        "currentWidth": 6
+                                    },
+                                    {
+                                        "components": [
+                                            {
+                                                "label": "FAA Reg No.",
+                                                "hiddenInPdf": false,
+                                                "tableView": true,
+                                                "key": "faaRegNo",
+                                                "permissions": [
+                                                    {
+                                                        "user": {},
+                                                        "permissionLevel": ""
+                                                    }
+                                                ],
+                                                "type": "textfield",
+                                                "input": true,
+                                                "placeholder": "",
+                                                "prefix": "",
+                                                "customClass": "",
+                                                "suffix": "",
+                                                "multiple": false,
+                                                "defaultValue": null,
+                                                "protected": false,
+                                                "unique": false,
+                                                "persistent": true,
+                                                "hidden": false,
+                                                "clearOnHide": true,
+                                                "refreshOn": "",
+                                                "redrawOn": "",
+                                                "modalEdit": false,
+                                                "dataGridLabel": false,
+                                                "labelPosition": "top",
+                                                "description": "",
+                                                "errorLabel": "",
+                                                "tooltip": "",
+                                                "hideLabel": false,
+                                                "tabindex": "",
+                                                "disabled": false,
+                                                "autofocus": false,
+                                                "dbIndex": false,
+                                                "customDefaultValue": "",
+                                                "calculateValue": "",
+                                                "calculateServer": false,
+                                                "widget": {
+                                                    "type": "input"
+                                                },
+                                                "attributes": {},
+                                                "validateOn": "change",
+                                                "validate": {
+                                                    "required": false,
+                                                    "custom": "",
+                                                    "customPrivate": false,
+                                                    "strictDateValidation": false,
+                                                    "multiple": false,
+                                                    "unique": false,
+                                                    "minLength": "",
+                                                    "maxLength": "",
+                                                    "pattern": ""
+                                                },
+                                                "conditional": {
+                                                    "show": null,
+                                                    "when": null,
+                                                    "eq": ""
+                                                },
+                                                "overlay": {
+                                                    "style": "",
+                                                    "left": "",
+                                                    "top": "",
+                                                    "width": "",
+                                                    "height": ""
+                                                },
+                                                "allowCalculateOverride": false,
+                                                "encrypted": false,
+                                                "showCharCount": false,
+                                                "showWordCount": false,
+                                                "properties": {},
+                                                "allowMultipleMasks": false,
+                                                "addons": [],
+                                                "mask": false,
+                                                "inputType": "text",
+                                                "inputFormat": "plain",
+                                                "inputMask": "",
+                                                "displayMask": "",
+                                                "spellcheck": true,
+                                                "truncateMultipleSpaces": false
+                                            },
+                                            {
+                                                "label": "Location",
+                                                "hiddenInPdf": false,
+                                                "tableView": false,
+                                                "map": {
+                                                    "mapTypeId": "roadmap",
+                                                    "zoom": 15,
+                                                    "height": 220,
+                                                    "controls": {
+                                                        "zoomControl": true,
+                                                        "fullscreenControl": false,
+                                                        "mapTypeControl": false,
+                                                        "scaleControl": false
+                                                    },
+                                                    "showResetLocationButton": false,
+                                                    "defaultCenterSource": "user",
+                                                    "advancedOptions": {}
+                                                },
+                                                "key": "location",
+                                                "permissions": [
+                                                    {
+                                                        "user": {},
+                                                        "permissionLevel": ""
+                                                    }
+                                                ],
+                                                "type": "location",
+                                                "input": true,
+                                                "placeholder": "",
+                                                "prefix": "",
+                                                "customClass": "",
+                                                "suffix": "",
+                                                "multiple": false,
+                                                "defaultValue": null,
+                                                "protected": false,
+                                                "unique": false,
+                                                "persistent": true,
+                                                "hidden": false,
+                                                "clearOnHide": true,
+                                                "refreshOn": "",
+                                                "redrawOn": "",
+                                                "modalEdit": false,
+                                                "dataGridLabel": false,
+                                                "labelPosition": "top",
+                                                "description": "",
+                                                "errorLabel": "",
+                                                "tooltip": "",
+                                                "hideLabel": false,
+                                                "tabindex": "",
+                                                "disabled": false,
+                                                "autofocus": false,
+                                                "dbIndex": false,
+                                                "customDefaultValue": "",
+                                                "calculateValue": "",
+                                                "calculateServer": false,
+                                                "widget": null,
+                                                "attributes": {},
+                                                "validateOn": "change",
+                                                "validate": {
+                                                    "required": false,
+                                                    "custom": "",
+                                                    "customPrivate": false,
+                                                    "strictDateValidation": false,
+                                                    "multiple": false,
+                                                    "unique": false
+                                                },
+                                                "conditional": {
+                                                    "show": null,
+                                                    "when": null,
+                                                    "eq": ""
+                                                },
+                                                "overlay": {
+                                                    "style": "",
+                                                    "left": "",
+                                                    "top": "",
+                                                    "width": "",
+                                                    "height": ""
+                                                },
+                                                "allowCalculateOverride": false,
+                                                "encrypted": false,
+                                                "showCharCount": false,
+                                                "showWordCount": false,
+                                                "properties": {},
+                                                "allowMultipleMasks": false,
+                                                "addons": []
+                                            }
+                                        ],
+                                        "width": 6,
+                                        "offset": 0,
+                                        "push": 0,
+                                        "pull": 0,
+                                        "size": "md",
+                                        "currentWidth": 6
+                                    }
+                                ],
+                                "hiddenInPdf": false,
+                                "key": "columns",
+                                "permissions": [
+                                    {
+                                        "user": {},
+                                        "permissionLevel": ""
+                                    }
+                                ],
+                                "type": "columns",
+                                "input": false,
+                                "tableView": false,
+                                "placeholder": "",
+                                "prefix": "",
+                                "customClass": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": null,
+                                "protected": false,
+                                "unique": false,
+                                "persistent": false,
+                                "hidden": false,
+                                "clearOnHide": false,
+                                "refreshOn": "",
+                                "redrawOn": "",
+                                "modalEdit": false,
+                                "dataGridLabel": false,
+                                "labelPosition": "top",
+                                "description": "",
+                                "errorLabel": "",
+                                "tooltip": "",
+                                "hideLabel": false,
+                                "tabindex": "",
+                                "disabled": false,
+                                "autofocus": false,
+                                "dbIndex": false,
+                                "customDefaultValue": "",
+                                "calculateValue": "",
+                                "calculateServer": false,
+                                "widget": null,
+                                "attributes": {},
+                                "validateOn": "change",
+                                "validate": {
+                                    "required": false,
+                                    "custom": "",
+                                    "customPrivate": false,
+                                    "strictDateValidation": false,
+                                    "multiple": false,
+                                    "unique": false
+                                },
+                                "conditional": {
+                                    "show": null,
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "overlay": {
+                                    "style": "",
+                                    "left": "",
+                                    "top": "",
+                                    "width": "",
+                                    "height": ""
+                                },
+                                "allowCalculateOverride": false,
+                                "encrypted": false,
+                                "showCharCount": false,
+                                "showWordCount": false,
+                                "properties": {},
+                                "allowMultipleMasks": false,
+                                "addons": [],
+                                "tree": false,
+                                "lazyLoad": false,
+                                "autoAdjust": false
+                            },
+                            {
+                                "label": "Columns",
+                                "columns": [
+                                    {
+                                        "components": [
+                                            {
+                                                "label": "Purpose of Flight",
+                                                "optionsLabelPosition": "right",
+                                                "description": "Note: commercial flights require sUAS license",
+                                                "inline": true,
+                                                "hiddenInPdf": false,
+                                                "tableView": false,
+                                                "values": [
+                                                    {
+                                                        "label": "Recreational",
+                                                        "value": "recreational"
+                                                    },
+                                                    {
+                                                        "label": "Commercial",
+                                                        "value": "commercial"
+                                                    },
+                                                    {
+                                                        "label": "SAR",
+                                                        "value": "sar"
+                                                    },
+                                                    {
+                                                        "label": "Other",
+                                                        "value": "other"
+                                                    }
+                                                ],
+                                                "key": "purposeOfFlight",
+                                                "permissions": [
+                                                    {
+                                                        "user": {},
+                                                        "permissionLevel": ""
+                                                    }
+                                                ],
+                                                "type": "radio",
+                                                "input": true,
+                                                "placeholder": "",
+                                                "prefix": "",
+                                                "customClass": "",
+                                                "suffix": "",
+                                                "multiple": false,
+                                                "defaultValue": null,
+                                                "protected": false,
+                                                "unique": false,
+                                                "persistent": true,
+                                                "hidden": false,
+                                                "clearOnHide": true,
+                                                "refreshOn": "",
+                                                "redrawOn": "",
+                                                "modalEdit": false,
+                                                "dataGridLabel": false,
+                                                "labelPosition": "top",
+                                                "errorLabel": "",
+                                                "tooltip": "",
+                                                "hideLabel": false,
+                                                "tabindex": "",
+                                                "disabled": false,
+                                                "autofocus": false,
+                                                "dbIndex": false,
+                                                "customDefaultValue": "",
+                                                "calculateValue": "",
+                                                "calculateServer": false,
+                                                "widget": null,
+                                                "attributes": {},
+                                                "validateOn": "change",
+                                                "validate": {
+                                                    "required": false,
+                                                    "custom": "",
+                                                    "customPrivate": false,
+                                                    "strictDateValidation": false,
+                                                    "multiple": false,
+                                                    "unique": false,
+                                                    "onlyAvailableItems": false
+                                                },
+                                                "conditional": {
+                                                    "show": null,
+                                                    "when": null,
+                                                    "eq": ""
+                                                },
+                                                "overlay": {
+                                                    "style": "",
+                                                    "left": "",
+                                                    "top": "",
+                                                    "width": "",
+                                                    "height": ""
+                                                },
+                                                "allowCalculateOverride": false,
+                                                "encrypted": false,
+                                                "showCharCount": false,
+                                                "showWordCount": false,
+                                                "properties": {},
+                                                "allowMultipleMasks": false,
+                                                "addons": [],
+                                                "inputType": "radio",
+                                                "fieldSet": false
+                                            }
+                                        ],
+                                        "width": 6,
+                                        "offset": 0,
+                                        "push": 0,
+                                        "pull": 0,
+                                        "size": "md",
+                                        "currentWidth": 6
+                                    },
+                                    {
+                                        "components": [
+                                            {
+                                                "label": "Authorized By",
+                                                "hiddenInPdf": false,
+                                                "tableView": true,
+                                                "key": "authorizedBy",
+                                                "conditional": {
+                                                    "show": true,
+                                                    "when": "purposeOfFlight",
+                                                    "eq": "commercial"
+                                                },
+                                                "permissions": [
+                                                    {
+                                                        "user": {},
+                                                        "permissionLevel": ""
+                                                    }
+                                                ],
+                                                "type": "textfield",
+                                                "input": true,
+                                                "placeholder": "",
+                                                "prefix": "",
+                                                "customClass": "",
+                                                "suffix": "",
+                                                "multiple": false,
+                                                "defaultValue": null,
+                                                "protected": false,
+                                                "unique": false,
+                                                "persistent": true,
+                                                "hidden": false,
+                                                "clearOnHide": true,
+                                                "refreshOn": "",
+                                                "redrawOn": "",
+                                                "modalEdit": false,
+                                                "dataGridLabel": false,
+                                                "labelPosition": "top",
+                                                "description": "",
+                                                "errorLabel": "",
+                                                "tooltip": "",
+                                                "hideLabel": false,
+                                                "tabindex": "",
+                                                "disabled": false,
+                                                "autofocus": false,
+                                                "dbIndex": false,
+                                                "customDefaultValue": "",
+                                                "calculateValue": "",
+                                                "calculateServer": false,
+                                                "widget": {
+                                                    "type": "input"
+                                                },
+                                                "attributes": {},
+                                                "validateOn": "change",
+                                                "validate": {
+                                                    "required": false,
+                                                    "custom": "",
+                                                    "customPrivate": false,
+                                                    "strictDateValidation": false,
+                                                    "multiple": false,
+                                                    "unique": false,
+                                                    "minLength": "",
+                                                    "maxLength": "",
+                                                    "pattern": ""
+                                                },
+                                                "overlay": {
+                                                    "style": "",
+                                                    "left": "",
+                                                    "top": "",
+                                                    "width": "",
+                                                    "height": ""
+                                                },
+                                                "allowCalculateOverride": false,
+                                                "encrypted": false,
+                                                "showCharCount": false,
+                                                "showWordCount": false,
+                                                "properties": {},
+                                                "allowMultipleMasks": false,
+                                                "addons": [],
+                                                "mask": false,
+                                                "inputType": "text",
+                                                "inputFormat": "plain",
+                                                "inputMask": "",
+                                                "displayMask": "",
+                                                "spellcheck": true,
+                                                "truncateMultipleSpaces": false
+                                            }
+                                        ],
+                                        "width": 6,
+                                        "offset": 0,
+                                        "push": 0,
+                                        "pull": 0,
+                                        "size": "md",
+                                        "currentWidth": 6
+                                    }
+                                ],
+                                "hiddenInPdf": false,
+                                "key": "columns1",
+                                "permissions": [
+                                    {
+                                        "user": {},
+                                        "permissionLevel": ""
+                                    }
+                                ],
+                                "type": "columns",
+                                "input": false,
+                                "tableView": false,
+                                "placeholder": "",
+                                "prefix": "",
+                                "customClass": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": null,
+                                "protected": false,
+                                "unique": false,
+                                "persistent": false,
+                                "hidden": false,
+                                "clearOnHide": false,
+                                "refreshOn": "",
+                                "redrawOn": "",
+                                "modalEdit": false,
+                                "dataGridLabel": false,
+                                "labelPosition": "top",
+                                "description": "",
+                                "errorLabel": "",
+                                "tooltip": "",
+                                "hideLabel": false,
+                                "tabindex": "",
+                                "disabled": false,
+                                "autofocus": false,
+                                "dbIndex": false,
+                                "customDefaultValue": "",
+                                "calculateValue": "",
+                                "calculateServer": false,
+                                "widget": null,
+                                "attributes": {},
+                                "validateOn": "change",
+                                "validate": {
+                                    "required": false,
+                                    "custom": "",
+                                    "customPrivate": false,
+                                    "strictDateValidation": false,
+                                    "multiple": false,
+                                    "unique": false
+                                },
+                                "conditional": {
+                                    "show": null,
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "overlay": {
+                                    "style": "",
+                                    "left": "",
+                                    "top": "",
+                                    "width": "",
+                                    "height": ""
+                                },
+                                "allowCalculateOverride": false,
+                                "encrypted": false,
+                                "showCharCount": false,
+                                "showWordCount": false,
+                                "properties": {},
+                                "allowMultipleMasks": false,
+                                "addons": [],
+                                "tree": false,
+                                "lazyLoad": false,
+                                "autoAdjust": false
+                            },
+                            {
+                                "label": "Pre-Start Checklist",
+                                "description": "Important: Complete all checklist items in the order they are presented. If you cannot tick of an item STOP and correct the problem before continuing",
+                                "hiddenInPdf": false,
+                                "tableView": false,
+                                "questions": [
+                                    {
+                                        "label": "1. Airspace - Unrestricted airspace or flight authorized",
+                                        "value": "1",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "2. Airspace - Potential obstructions near intended flight path identified ",
+                                        "value": "2",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "3. Weather - Visibility ≥ miles/500 ft. Wind ≤ 15mph, Precip. - None",
+                                        "value": "3",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "4. sUAS Airframe/Props - No structural defects visible",
+                                        "value": "4",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "5. sUAS Battery - Sufficient for intended flight, not less than 75%",
+                                        "value": "5",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "6. Controller Battery - Sufficient for intended flight, not less than 75%",
+                                        "value": "6",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "7. Display Device Battery - Sufficient for intended flight ",
+                                        "value": "7",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "8. Memory Card - Installed, sufficient memory space available for flight ",
+                                        "value": "8",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "9. Camera Gimbal Lock - Removed ",
+                                        "value": "9",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "10. Display Device - On",
+                                        "value": "10",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "11. Controller Power -On",
+                                        "value": "11",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "12. sUAS Power - On",
+                                        "value": "12",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "13. sUAS Status Lights - Flashing Gree ",
+                                        "value": "13",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "14. Camera Check - FPV camera view normal ",
+                                        "value": "14",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "15. Compass Calibration - Compass calibrated for current location",
+                                        "value": "15",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "16. Flight Limits - Alt.  ≤ 120 meters, Dist. ≤ 500 meters Set  ",
+                                        "value": "16",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "17. Flight Mode - Controller mode switch in “P” , display status Green Set to GPS",
+                                        "value": "17",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "18. Take-Off Location - Clear for ≥ 25ft. radius, no overhead obstructions ",
+                                        "value": "18",
+                                        "tooltip": ""
+                                    }
+                                ],
+                                "values": [
+                                    {
+                                        "label": "Yes",
+                                        "value": "a",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "b",
+                                        "tooltip": ""
+                                    }
+                                ],
+                                "key": "preStartChecklist",
+                                "permissions": [
+                                    {
+                                        "user": {},
+                                        "permissionLevel": ""
+                                    }
+                                ],
+                                "type": "survey",
+                                "input": true,
+                                "placeholder": "",
+                                "prefix": "",
+                                "customClass": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": null,
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "refreshOn": "",
+                                "redrawOn": "",
+                                "modalEdit": false,
+                                "dataGridLabel": false,
+                                "labelPosition": "top",
+                                "errorLabel": "",
+                                "tooltip": "",
+                                "hideLabel": false,
+                                "tabindex": "",
+                                "disabled": false,
+                                "autofocus": false,
+                                "dbIndex": false,
+                                "customDefaultValue": "",
+                                "calculateValue": "",
+                                "calculateServer": false,
+                                "widget": null,
+                                "attributes": {},
+                                "validateOn": "change",
+                                "validate": {
+                                    "required": false,
+                                    "custom": "",
+                                    "customPrivate": false,
+                                    "strictDateValidation": false,
+                                    "multiple": false,
+                                    "unique": false
+                                },
+                                "conditional": {
+                                    "show": null,
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "overlay": {
+                                    "style": "",
+                                    "left": "",
+                                    "top": "",
+                                    "width": "",
+                                    "height": ""
+                                },
+                                "allowCalculateOverride": false,
+                                "encrypted": false,
+                                "showCharCount": false,
+                                "showWordCount": false,
+                                "properties": {},
+                                "allowMultipleMasks": false,
+                                "addons": []
+                            },
+                            {
+                                "label": "Motor Start Checklist",
+                                "labelPosition": "top",
+                                "description": "",
+                                "tooltip": "",
+                                "customClass": "",
+                                "tabindex": "",
+                                "hidden": false,
+                                "hiddenInPdf": false,
+                                "hideLabel": false,
+                                "autofocus": false,
+                                "disabled": false,
+                                "tableView": false,
+                                "modalEdit": false,
+                                "questions": [
+                                    {
+                                        "label": "1. sUAS Motor Start  - sUAS motors start and run at idle, no abnormal noise",
+                                        "value": "1",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "2. Home Point - Home Point Set",
+                                        "value": "2",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "3. Hover Check - Flight and Camera Gimbal control responses normal",
+                                        "value": "3",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "4. Flight Telemetry - Telemetry normal (Bat, Alt, Dist)",
+                                        "value": "4",
+                                        "tooltip": ""
+                                    }
+                                ],
+                                "values": [
+                                    {
+                                        "label": "Yes",
+                                        "value": "yes",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "no",
+                                        "tooltip": ""
+                                    }
+                                ],
+                                "redrawOn": "",
+                                "clearOnHide": true,
+                                "customDefaultValue": "",
+                                "calculateValue": "",
+                                "allowCalculateOverride": false,
+                                "validate": {
+                                    "required": false,
+                                    "customMessage": "",
+                                    "custom": "",
+                                    "customPrivate": false,
+                                    "json": "",
+                                    "strictDateValidation": false,
+                                    "multiple": false,
+                                    "unique": false
+                                },
+                                "unique": false,
+                                "errorLabel": "",
+                                "errors": "",
+                                "key": "motorStartChecklist",
+                                "tags": [],
+                                "properties": {},
+                                "conditional": {
+                                    "show": null,
+                                    "when": null,
+                                    "eq": "",
+                                    "json": ""
+                                },
+                                "customConditional": "",
+                                "logic": [],
+                                "attributes": {},
+                                "creatorPermissions": "",
+                                "permissions": [
+                                    {
+                                        "user": {},
+                                        "permissionLevel": ""
+                                    }
+                                ],
+                                "type": "survey",
+                                "input": true,
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "protected": false,
+                                "persistent": true,
+                                "refreshOn": "",
+                                "dataGridLabel": false,
+                                "dbIndex": false,
+                                "calculateServer": false,
+                                "widget": null,
+                                "validateOn": "change",
+                                "overlay": {
+                                    "style": "",
+                                    "left": "",
+                                    "top": "",
+                                    "width": "",
+                                    "height": ""
+                                },
+                                "encrypted": false,
+                                "showCharCount": false,
+                                "showWordCount": false,
+                                "allowMultipleMasks": false,
+                                "addons": [],
+                                "defaultValue": {}
+                            },
+                            {
+                                "label": "Photos of air-craft",
+                                "labelPosition": "top",
+                                "description": "",
+                                "tooltip": "",
+                                "customClass": "",
+                                "tabindex": "",
+                                "hidden": false,
+                                "hiddenInPdf": false,
+                                "hideLabel": false,
+                                "autofocus": false,
+                                "disabled": false,
+                                "tableView": false,
+                                "modalEdit": false,
+                                "showImageEditor": true,
+                                "storage": "indexeddb",
+                                "image": true,
+                                "uploadOnly": false,
+                                "fileTypes": [
+                                    {
+                                        "label": "",
+                                        "value": ""
+                                    }
+                                ],
+                                "filePattern": "*",
+                                "fileMinSize": "0KB",
+                                "fileMaxSize": "1GB",
+                                "multiple": false,
+                                "redrawOn": "",
+                                "clearOnHide": true,
+                                "customDefaultValue": "",
+                                "calculateValue": "",
+                                "allowCalculateOverride": false,
+                                "validate": {
+                                    "required": false,
+                                    "customMessage": "",
+                                    "custom": "",
+                                    "customPrivate": false,
+                                    "json": "",
+                                    "strictDateValidation": false,
+                                    "multiple": false,
+                                    "unique": false
+                                },
+                                "errorLabel": "",
+                                "errors": "",
+                                "key": "photosOfAirCraft",
+                                "tags": [],
+                                "properties": {},
+                                "conditional": {
+                                    "show": null,
+                                    "when": null,
+                                    "eq": "",
+                                    "json": ""
+                                },
+                                "customConditional": "",
+                                "logic": [],
+                                "attributes": {},
+                                "creatorPermissions": "",
+                                "permissions": [
+                                    {
+                                        "user": {},
+                                        "permissionLevel": ""
+                                    }
+                                ],
+                                "type": "file",
+                                "options": {
+                                    "thumbnail": {
+                                        "size": 200
+                                    },
+                                    "showImageEditor": true
+                                },
+                                "imageSize": "200",
+                                "input": true,
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "defaultValue": null,
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "refreshOn": "",
+                                "dataGridLabel": false,
+                                "dbIndex": false,
+                                "calculateServer": false,
+                                "widget": null,
+                                "validateOn": "change",
+                                "overlay": {
+                                    "style": "",
+                                    "left": "",
+                                    "top": "",
+                                    "width": "",
+                                    "height": ""
+                                },
+                                "encrypted": false,
+                                "showCharCount": false,
+                                "showWordCount": false,
+                                "allowMultipleMasks": false,
+                                "addons": [],
+                                "privateDownload": false
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Post-Flight Check List",
+                        "key": "postFlightCheckList",
+                        "components": [
+                            {
+                                "label": "Landing Checklist",
+                                "labelPosition": "top",
+                                "description": "",
+                                "tooltip": "",
+                                "customClass": "",
+                                "tabindex": "",
+                                "hidden": false,
+                                "hiddenInPdf": false,
+                                "hideLabel": false,
+                                "autofocus": false,
+                                "disabled": false,
+                                "tableView": false,
+                                "modalEdit": false,
+                                "questions": [
+                                    {
+                                        "label": "1. Landing Location - Clear for ≥ 25ft. radius, no overhead obstructions ",
+                                        "value": "option1",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "2. sUAS Power - Off",
+                                        "value": "option2",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "3. Controller Power - Off",
+                                        "value": "option3",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "4. Display Device Power - Off",
+                                        "value": "4DisplayDevicePowerOff",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "5. Camera Gimbal Lock - Installed",
+                                        "value": "5CameraGimbalLockInstalled",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "6. Memory Card - Removed if image download desired ",
+                                        "value": "6MemoryCardRemovedIfImageDownloadDesired",
+                                        "tooltip": ""
+                                    }
+                                ],
+                                "values": [
+                                    {
+                                        "label": "Yes",
+                                        "value": "yes",
+                                        "tooltip": ""
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "no",
+                                        "tooltip": ""
+                                    }
+                                ],
+                                "redrawOn": "",
+                                "clearOnHide": true,
+                                "customDefaultValue": "",
+                                "calculateValue": "",
+                                "allowCalculateOverride": false,
+                                "validate": {
+                                    "required": false,
+                                    "customMessage": "",
+                                    "custom": "",
+                                    "customPrivate": false,
+                                    "json": "",
+                                    "strictDateValidation": false,
+                                    "multiple": false,
+                                    "unique": false
+                                },
+                                "unique": false,
+                                "errorLabel": "",
+                                "errors": "",
+                                "key": "landingChecklist",
+                                "tags": [],
+                                "properties": {},
+                                "conditional": {
+                                    "show": null,
+                                    "when": null,
+                                    "eq": "",
+                                    "json": ""
+                                },
+                                "customConditional": "",
+                                "logic": [],
+                                "attributes": {},
+                                "creatorPermissions": "",
+                                "permissions": [
+                                    {
+                                        "user": {},
+                                        "permissionLevel": ""
+                                    }
+                                ],
+                                "type": "survey",
+                                "input": true,
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "protected": false,
+                                "persistent": true,
+                                "refreshOn": "",
+                                "dataGridLabel": false,
+                                "dbIndex": false,
+                                "calculateServer": false,
+                                "widget": null,
+                                "validateOn": "change",
+                                "overlay": {
+                                    "style": "",
+                                    "left": "",
+                                    "top": "",
+                                    "width": "",
+                                    "height": ""
+                                },
+                                "encrypted": false,
+                                "showCharCount": false,
+                                "showWordCount": false,
+                                "allowMultipleMasks": false,
+                                "addons": [],
+                                "defaultValue": {}
+                            },
+                            {
+                                "label": "Post Flight Photos",
+                                "labelPosition": "top",
+                                "description": "",
+                                "tooltip": "",
+                                "customClass": "",
+                                "tabindex": "",
+                                "hidden": false,
+                                "hiddenInPdf": false,
+                                "hideLabel": false,
+                                "autofocus": false,
+                                "disabled": false,
+                                "tableView": false,
+                                "modalEdit": false,
+                                "showImageEditor": true,
+                                "storage": "indexeddb",
+                                "image": true,
+                                "uploadOnly": false,
+                                "fileTypes": [
+                                    {
+                                        "label": "",
+                                        "value": ""
+                                    }
+                                ],
+                                "filePattern": "*",
+                                "fileMinSize": "0KB",
+                                "fileMaxSize": "1GB",
+                                "multiple": false,
+                                "redrawOn": "",
+                                "clearOnHide": true,
+                                "customDefaultValue": "",
+                                "calculateValue": "",
+                                "allowCalculateOverride": false,
+                                "validate": {
+                                    "required": false,
+                                    "customMessage": "",
+                                    "custom": "",
+                                    "customPrivate": false,
+                                    "json": "",
+                                    "strictDateValidation": false,
+                                    "multiple": false,
+                                    "unique": false
+                                },
+                                "errorLabel": "",
+                                "errors": "",
+                                "key": "postFlightPhotos",
+                                "tags": [],
+                                "properties": {},
+                                "conditional": {
+                                    "show": null,
+                                    "when": null,
+                                    "eq": "",
+                                    "json": ""
+                                },
+                                "customConditional": "",
+                                "logic": [],
+                                "attributes": {},
+                                "creatorPermissions": "",
+                                "permissions": [
+                                    {
+                                        "user": {},
+                                        "permissionLevel": ""
+                                    }
+                                ],
+                                "type": "file",
+                                "options": {
+                                    "thumbnail": {
+                                        "size": 200
+                                    },
+                                    "showImageEditor": true
+                                },
+                                "imageSize": "200",
+                                "input": true,
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "defaultValue": null,
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "refreshOn": "",
+                                "dataGridLabel": false,
+                                "dbIndex": false,
+                                "calculateServer": false,
+                                "widget": null,
+                                "validateOn": "change",
+                                "overlay": {
+                                    "style": "",
+                                    "left": "",
+                                    "top": "",
+                                    "width": "",
+                                    "height": ""
+                                },
+                                "encrypted": false,
+                                "showCharCount": false,
+                                "showWordCount": false,
+                                "allowMultipleMasks": false,
+                                "addons": [],
+                                "privateDownload": false
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Information",
+                        "key": "information",
+                        "components": [
+                            {
+                                "html": "<p>What rules do I need to follow as a recreational operator?</p><ul><li>If you want to fly drones or model aircraft for fun, we recommend flying within the programming of a community-based organization such as the Academy of Model Aeronautics (AMA).</li><li>Register with the FAA at https://faadronezone.faa.gov/.</li><li>Take The Recreational UAS Safety Test (TRUST) and carry proof of test passage.</li><li>Keep your aircraft in eyesight at all times, and use an observer to assist if needed.</li><li>Remain well clear of and do not interfere with manned aircraft operations, and you must see and avoid other aircraft and obstacles at all times.</li><li>Do not fly over unprotected persons or moving vehicles, and remain well clear from individuals and vulnerable property.</li><li>Do not fly in adverse weather conditions such as in high winds or reduced visibility.</li><li>Do not fly under the influence of alcohol or drugs.</li><li>Ensure the operating environment is safe and that the operator is competent and proficient in the operation of the UAS.</li><li>Do not fly near or over sensitive infrastructure or property such as power stations, water treatment facilities, correctional facilities, heavily traveled roadways, government facilities, etc.</li><li>Check and follow all local laws and ordinances before flying over private property.</li><li>Do not conduct surveillance or photograph persons in areas where there is an expectation of privacy without the individual’s permission.</li></ul><p>Users of both commercial and recreational UAS should be aware that in remote, rural and agricultural areas, manned aircraft, including fixed-wing aircraft and helicopters, may be operating very close to ground level. Pilots conducting agricultural, firefighting, law enforcement, emergency medical, wildlife survey operations and a variety of other services all legally and routinely work in low-level airspace. Operators controlling UAS in these areas should maintain situational awareness, give way to, and remain a safe distance from these low-level, manned airplanes and helicopters.</p>",
+                                "label": "Content",
+                                "customClass": "",
+                                "refreshOnChange": false,
+                                "hidden": false,
+                                "hiddenInPdf": false,
+                                "modalEdit": false,
+                                "key": "content1",
+                                "tags": [],
+                                "properties": {},
+                                "conditional": {
+                                    "show": null,
+                                    "when": null,
+                                    "eq": "",
+                                    "json": ""
+                                },
+                                "customConditional": "",
+                                "logic": [],
+                                "attributes": {},
+                                "creatorPermissions": "",
+                                "permissions": [
+                                    {
+                                        "user": {},
+                                        "permissionLevel": ""
+                                    }
+                                ],
+                                "type": "content",
+                                "input": false,
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": null,
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "clearOnHide": true,
+                                "refreshOn": "",
+                                "redrawOn": "",
+                                "tableView": false,
+                                "dataGridLabel": false,
+                                "labelPosition": "top",
+                                "description": "",
+                                "errorLabel": "",
+                                "tooltip": "",
+                                "hideLabel": false,
+                                "tabindex": "",
+                                "disabled": false,
+                                "autofocus": false,
+                                "dbIndex": false,
+                                "customDefaultValue": "",
+                                "calculateValue": "",
+                                "calculateServer": false,
+                                "widget": null,
+                                "validateOn": "change",
+                                "validate": {
+                                    "required": false,
+                                    "custom": "",
+                                    "customPrivate": false,
+                                    "strictDateValidation": false,
+                                    "multiple": false,
+                                    "unique": false
+                                },
+                                "overlay": {
+                                    "style": "",
+                                    "left": "",
+                                    "top": "",
+                                    "width": "",
+                                    "height": ""
+                                },
+                                "allowCalculateOverride": false,
+                                "encrypted": false,
+                                "showCharCount": false,
+                                "showWordCount": false,
+                                "allowMultipleMasks": false,
+                                "addons": []
+                            }
+                        ]
+                    }
+                ],
+                "customClass": "",
+                "hidden": false,
+                "verticalLayout": false,
+                "hiddenInPdf": false,
+                "hideLabel": false,
+                "modalEdit": false,
+                "key": "tabs",
+                "tags": [],
+                "properties": {},
+                "conditional": {
+                    "show": null,
+                    "when": null,
+                    "eq": "",
+                    "json": ""
+                },
+                "customConditional": "",
+                "logic": [],
+                "attributes": {},
+                "creatorPermissions": "",
+                "permissions": [
+                    {
+                        "user": {},
+                        "permissionLevel": ""
+                    }
+                ],
+                "type": "tabs",
+                "input": false,
+                "tableView": false,
+                "placeholder": "",
+                "prefix": "",
+                "suffix": "",
+                "multiple": false,
+                "defaultValue": null,
+                "protected": false,
+                "unique": false,
+                "persistent": false,
+                "clearOnHide": true,
+                "refreshOn": "",
+                "redrawOn": "",
+                "dataGridLabel": false,
+                "labelPosition": "top",
+                "description": "",
+                "errorLabel": "",
+                "tooltip": "",
+                "tabindex": "",
+                "disabled": false,
+                "autofocus": false,
+                "dbIndex": false,
+                "customDefaultValue": "",
+                "calculateValue": "",
+                "calculateServer": false,
+                "widget": null,
+                "validateOn": "change",
+                "validate": {
+                    "required": false,
+                    "custom": "",
+                    "customPrivate": false,
+                    "strictDateValidation": false,
+                    "multiple": false,
+                    "unique": false
+                },
+                "overlay": {
+                    "style": "",
+                    "left": "",
+                    "top": "",
+                    "width": "",
+                    "height": ""
+                },
+                "allowCalculateOverride": false,
+                "encrypted": false,
+                "showCharCount": false,
+                "showWordCount": false,
+                "allowMultipleMasks": false,
+                "addons": [],
+                "tree": false,
+                "lazyLoad": false
+            },
+            {
+                "label": "HTML",
+                "tag": "p",
+                "className": "",
+                "attrs": [
+                    {
+                        "attr": "",
+                        "value": ""
+                    }
+                ],
+                "content": "<br />",
+                "refreshOnChange": false,
+                "customClass": "",
+                "hidden": false,
+                "hiddenInPdf": false,
+                "modalEdit": false,
+                "key": "html",
+                "tags": [],
+                "properties": {},
+                "conditional": {
+                    "show": null,
+                    "when": null,
+                    "eq": "",
+                    "json": ""
+                },
+                "customConditional": "",
+                "logic": [],
+                "attributes": {},
+                "creatorPermissions": "",
+                "permissions": [
+                    {
+                        "user": {},
+                        "permissionLevel": ""
+                    }
+                ],
+                "type": "htmlelement",
+                "input": false,
+                "placeholder": "",
+                "prefix": "",
+                "suffix": "",
+                "multiple": false,
+                "defaultValue": null,
+                "protected": false,
+                "unique": false,
+                "persistent": false,
+                "clearOnHide": true,
+                "refreshOn": "",
+                "redrawOn": "",
+                "tableView": false,
+                "dataGridLabel": false,
+                "labelPosition": "top",
+                "description": "",
+                "errorLabel": "",
+                "tooltip": "",
+                "hideLabel": false,
+                "tabindex": "",
+                "disabled": false,
+                "autofocus": false,
+                "dbIndex": false,
+                "customDefaultValue": "",
+                "calculateValue": "",
+                "calculateServer": false,
+                "widget": null,
+                "validateOn": "change",
+                "validate": {
+                    "required": false,
+                    "custom": "",
+                    "customPrivate": false,
+                    "strictDateValidation": false,
+                    "multiple": false,
+                    "unique": false
+                },
+                "overlay": {
+                    "style": "",
+                    "left": "",
+                    "top": "",
+                    "width": "",
+                    "height": ""
+                },
+                "allowCalculateOverride": false,
+                "encrypted": false,
+                "showCharCount": false,
+                "showWordCount": false,
+                "allowMultipleMasks": false,
+                "addons": []
+            },
+            {
+                "type": "button",
+                "key": "submit",
+                "disableOnInvalid": false,
+                "input": true,
+                "placeholder": "",
+                "prefix": "",
+                "customClass": "",
+                "suffix": "",
+                "multiple": false,
+                "defaultValue": null,
+                "protected": false,
+                "unique": false,
+                "persistent": false,
+                "hidden": false,
+                "clearOnHide": true,
+                "refreshOn": "",
+                "redrawOn": "",
+                "tableView": false,
+                "modalEdit": false,
+                "label": "Submit",
+                "dataGridLabel": true,
+                "labelPosition": "top",
+                "description": "",
+                "errorLabel": "",
+                "tooltip": "",
+                "hideLabel": false,
+                "tabindex": "",
+                "disabled": false,
+                "autofocus": false,
+                "dbIndex": false,
+                "customDefaultValue": "",
+                "calculateValue": "",
+                "calculateServer": false,
+                "widget": {
+                    "type": "input"
+                },
+                "attributes": {},
+                "validateOn": "change",
+                "validate": {
+                    "required": false,
+                    "custom": "",
+                    "customPrivate": false,
+                    "strictDateValidation": false,
+                    "multiple": false,
+                    "unique": false
+                },
+                "conditional": {
+                    "show": null,
+                    "when": null,
+                    "eq": ""
+                },
+                "overlay": {
+                    "style": "",
+                    "left": "",
+                    "top": "",
+                    "width": "",
+                    "height": ""
+                },
+                "allowCalculateOverride": false,
+                "encrypted": false,
+                "showCharCount": false,
+                "showWordCount": false,
+                "properties": {},
+                "allowMultipleMasks": false,
+                "addons": [],
+                "size": "md",
+                "leftIcon": "",
+                "rightIcon": "",
+                "block": false,
+                "action": "submit",
+                "theme": "primary"
+            }
+        ]
+    }
+}
