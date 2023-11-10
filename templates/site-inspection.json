@@ -2,9 +2,15 @@
     "title": "Site Inspection",
     "description": "Inspect a work site to ensure compliance and safety",
     "tags": [
+        "construction",
+        "field services",
+        "transport and logistics",
+        "helath and safety",
+        "maintenance management",
+        "job site operations",
         "safety",
         "ohs",
-        "construction"
+        "industrial"
     ],
     "responsesTitleTemplate": "Site Inspection - {{ moment(date).format(\"YYYY-MM-DD\") }}",
     "schema": {
