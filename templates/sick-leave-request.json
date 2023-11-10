@@ -2,9 +2,11 @@
     "title": "Sick Leave Request",
     "description": "Submit a leave request and request. You can trigger PowerAutomate to start a approval flow!",
     "tags": [
+        "information technology",
+        "health and safety",
         "leave",
         "sick",
-        "Human Resources"
+        "human resources"
     ],
     "responsesTitleTemplate": "Leave Request: {{ employeeName }} {{ moment(startDate).format(\"YYYY-MM-DD\") }} - {{ moment(endDate).format(\"YYYY-MM-DD\") }}",
     "schema": {

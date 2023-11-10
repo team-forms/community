@@ -2,10 +2,15 @@
     "title": "Take 5 Safety Checklist",
     "description": "Identify health and safety hazards before starting work on a site.",
     "tags": [
+        "construction",
+        "field services",
+        "transport and logistics",
+        "helath and safety",
+        "maintenance management",
+        "job site operations",
         "safety",
         "ohs",
-        "construction",
-        "resources"
+        "industrial"
     ],
     "responsesTitleTemplate": "Take 5 Safety Checklist - {{ moment(dateTime).format(\"YYYY-MM-DD\") }} - {{ shift }}",
     "schema": {

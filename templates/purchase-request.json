@@ -2,7 +2,9 @@
     "title": "Purchase Request",
     "description": "Create purchase requests and approvals",
     "tags": [
-        "procurment",
+        "procurement",
+        "finance",
+        "job site operations",
         "purchasing"
     ],
     "responsesTitleTemplate": "Purchase Request - {{ requestedBy }} - {{ moment(requestDate).format(\"YYYY-MM-DD\") }}",

@@ -2,11 +2,13 @@
     "title": "Invoice Template",
     "description": "Create sandardised invoice pdfs and track what invoices are created",
     "tags": [
+        "procurement",
+        "finance",
+        "job site operations",
         "billing",
         "project management",
         "invoice",
-        "payment",
-        "procurment"
+        "payment"
     ],
     "responsesTitleTemplate": "Invoice #{{ invoiceNo }}",
     "schema": {

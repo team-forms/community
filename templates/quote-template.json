@@ -2,7 +2,9 @@
     "title": "Quote Template",
     "description": "Create standardised quotes and track what has been raised",
     "tags": [
-        "procurment",
+        "procurement",
+        "finance",
+        "job site operations",
         "purchasing"
     ],
     "responsesTitleTemplate": "Quote #{{ quoteNo }}",
