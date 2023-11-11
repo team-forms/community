@@ -1,0 +1,1547 @@
+{
+    "title": "IT Service Desk Ticket",
+    "description": "Raise and manage the status of service desk tickets with just forms!",
+    "tags": [
+        "information technology",
+        "job site operations",
+        "it",
+        "ticket",
+        "service"
+    ],
+    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"24\" color=\"#c14d8a\" stroke=\"#c14d8a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"transparent\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path><path d=\"M10 15h-6a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h6\"></path><path d=\"M13 4m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z\"></path><path d=\"M7 19l3 0\"></path><path d=\"M17 8l0 .01\"></path><path d=\"M17 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\"></path><path d=\"M9 15l0 4\"></path></svg>",
+    "responsesTitleTemplate": "IT Service Desk Ticket #{{ ticketNo }}",
+    "schema": {
+        "display": "form",
+        "components": [
+            {
+                "html": "<figure class=\"image image_resized\" style=\"width:32.54%;\"><img src=\"data:image/svg+xml;base64,PHN2ZyBpZD0ibG9nby04NyIgd2lkdGg9IjIwMiIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDIwMiA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBjbGFzcz0iY2N1c3RvbSIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNS41NTU3IDExLjY4NTNDMjMuOTExMiAxMC41ODY1IDIxLjk3NzggMTAgMjAgMTBWMEMyMy45NTU2IDAgMjcuODIyNCAxLjE3Mjk4IDMxLjExMTQgMy4zNzA2MUMzNC40MDA0IDUuNTY4MjMgMzYuOTYzOCA4LjY5MTgxIDM4LjQ3NzYgMTIuMzQ2M0MzOS45OTEzIDE2LjAwMDggNDAuMzg3NCAyMC4wMjIyIDM5LjYxNTcgMjMuOTAxOEMzOC44NDQgMjcuNzgxNCAzNi45MzkyIDMxLjM0NTEgMzQuMTQyMSAzNC4xNDIxQzMxLjM0NTEgMzYuOTM5MiAyNy43ODE0IDM4Ljg0NCAyMy45MDE4IDM5LjYxNTdDMjAuMDIyMiA0MC4zODc0IDE2LjAwMDggMzkuOTkxMyAxMi4zNDYzIDM4LjQ3NzZDOC42OTE4IDM2Ljk2MzggNS41NjgyMyAzNC40MDA0IDMuMzcwNjEgMzEuMTExNEMxLjE3Mjk4IDI3LjgyMjQgMCAyMy45NTU2IDAgMjBIMTBDMTAgMjEuOTc3OCAxMC41ODY1IDIzLjkxMTIgMTEuNjg1MyAyNS41NTU3QzEyLjc4NDEgMjcuMjAwMiAxNC4zNDU5IDI4LjQ4MTkgMTYuMTczMiAyOS4yMzg4QzE4LjAwMDQgMjkuOTk1NyAyMC4wMTExIDMwLjE5MzcgMjEuOTUwOSAyOS44MDc4QzIzLjg5MDcgMjkuNDIyIDI1LjY3MjUgMjguNDY5NiAyNy4wNzExIDI3LjA3MTFDMjguNDY5NiAyNS42NzI1IDI5LjQyMiAyMy44OTA3IDI5LjgwNzggMjEuOTUwOUMzMC4xOTM3IDIwLjAxMTEgMjkuOTk1NyAxOC4wMDA0IDI5LjIzODggMTYuMTczMkMyOC40ODE5IDE0LjM0NTkgMjcuMjAwMiAxMi43ODQxIDI1LjU1NTcgMTEuNjg1M1oiIGZpbGw9IiMwMDdERkMiPjwvcGF0aD48cGF0aCBjbGFzcz0iY2N1c3RvbSIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMCAxLjQ3MDIzZS0wNkMxMCAxLjMxMzIyIDkuNzQxMzUgMi42MTM1OCA5LjIzODggMy44MjY4NEM4LjczNjI1IDUuMDQwMDkgNy45OTk2NiA2LjE0MjQ4IDcuMDcxMDcgNy4wNzEwN0M2LjE0MjQ5IDcuOTk5NjYgNS4wNDAxIDguNzM2MjUgMy44MjY4NCA5LjIzODhDMi42MTM1OCA5Ljc0MTM0IDEuMzEzMjIgMTAgNi4xNTkxNmUtMDYgMTBMNS43MjIwNWUtMDYgMjBDMi42MjY0NCAyMCA1LjIyNzE2IDE5LjQ4MjcgNy42NTM2OCAxOC40Nzc2QzEwLjA4MDIgMTcuNDcyNSAxMi4yODUgMTUuOTk5MyAxNC4xNDIxIDE0LjE0MjFDMTUuOTk5MyAxMi4yODUgMTcuNDcyNSAxMC4wODAyIDE4LjQ3NzYgNy42NTM2N0MxOS40ODI3IDUuMjI3MTUgMjAgMi42MjY0MyAyMCAtMy44MTQ3ZS0wNkwxMCAxLjQ3MDIzZS0wNloiIGZpbGw9IiMwMDdERkMiPjwvcGF0aD48cGF0aCBjbGFzcz0iY2N1c3RvbSIgZD0iTTEyNS42MTkgMTQuNDUyNUgxMjAuNzY3VjI5Ljg2NDhIMTI1LjYxOVYxNC40NTI1WiIgZmlsbD0iIzAwN0RGQyI+PC9wYXRoPjxwYXRoIGNsYXNzPSJjY3VzdG9tIiBkPSJNMTIxLjMwNyAxMS41NjY2QzEyMS44MTQgMTIuMDc0IDEyMi40NDggMTIuMzI3NyAxMjMuMjA5IDEyLjMyNzdDMTIzLjk3IDEyLjMyNzcgMTI0LjU5NCAxMi4wNzQgMTI1LjA4IDExLjU2NjZDMTI1LjU2NyAxMS4wMzgxIDEyNS44MSAxMC40MDM4IDEyNS44MSA5LjY2Mzg1QzEyNS44MSA4LjkwMjc3IDEyNS41NjcgOC4yNjg0OSAxMjUuMDggNy43NjExMUMxMjQuNTk0IDcuMjUzNjkgMTIzLjk3IDcgMTIzLjIwOSA3QzEyMi40NDggNyAxMjEuODE0IDcuMjUzNjkgMTIxLjMwNyA3Ljc2MTExQzEyMC44MiA4LjI2ODQ5IDEyMC41NzcgOC45MDI3NyAxMjAuNTc3IDkuNjYzODVDMTIwLjU3NyAxMC40MDM4IDEyMC44MiAxMS4wMzgxIDEyMS4zMDcgMTEuNTY2NloiIGZpbGw9IiMwMDdERkMiPjwvcGF0aD48cGF0aCBjbGFzcz0iY2N1c3RvbSIgZD0iTTUxLjE1NjIgMjkuODY0OFY3LjQ3NTY4SDU2LjEzNTFWMjUuNDg4NUg2Ni4wNjEyVjI5Ljg2NDhINTEuMTU2MloiIGZpbGw9IiMwMDdERkMiPjwvcGF0aD48cGF0aCBjbGFzcz0iY2N1c3RvbSIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03NS4wMjc0IDMwLjIxMzZDNzMuNDQxOCAzMC4yMTM2IDcyLjAwNDIgMjkuODY0OCA3MC43MTQ1IDI5LjE2NzFDNjkuNDQ2IDI4LjQ0ODMgNjguNDQxOCAyNy40NzU4IDY3LjcwMTggMjYuMjQ5NUM2Ni45NjE5IDI1LjAyMzMgNjYuNTkxOSAyMy42NDkxIDY2LjU5MTkgMjIuMTI2OUM2Ni41OTE5IDIwLjYwNDcgNjYuOTYxOSAxOS4yNDExIDY3LjcwMTggMTguMDM2QzY4LjQ0MTggMTYuODMwOSA2OS40NDYgMTUuODc5NSA3MC43MTQ1IDE1LjE4MTlDNzEuOTgzIDE0LjQ2MyA3My40MjA3IDE0LjEwMzYgNzUuMDI3NCAxNC4xMDM2Qzc2LjYzNDIgMTQuMTAzNiA3OC4wNzE4IDE0LjQ1MjUgNzkuMzQwMyAxNS4xNTAxQzgwLjYwODggMTUuODQ3OCA4MS42MTMxIDE2LjgwOTggODIuMzUzIDE4LjAzNkM4My4wOTMgMTkuMjQxMSA4My40NjMgMjAuNjA0NyA4My40NjMgMjIuMTI2OUM4My40NjMgMjMuNjQ5MSA4My4wOTMgMjUuMDIzMyA4Mi4zNTMgMjYuMjQ5NUM4MS42MTMxIDI3LjQ3NTggODAuNjA4OCAyOC40NDgzIDc5LjM0MDMgMjkuMTY3MUM3OC4wNzE4IDI5Ljg2NDggNzYuNjM0MiAzMC4yMTM2IDc1LjAyNzQgMzAuMjEzNlpNNzUuMDI3NCAyNS44MDU2Qzc1LjcyNTEgMjUuODA1NiA3Ni4zMzgyIDI1LjY1NzYgNzYuODY2OCAyNS4zNjE2Qzc3LjM5NTMgMjUuMDQ0NSA3Ny43OTcgMjQuNjExMSA3OC4wNzE4IDI0LjA2MTRDNzguMzY3OCAyMy40OTA2IDc4LjUxNTggMjIuODQ1NyA3OC41MTU4IDIyLjEyNjlDNzguNTE1OCAyMS40MDgxIDc4LjM2NzggMjAuNzg0NCA3OC4wNzE4IDIwLjI1NTlDNzcuNzc1OCAxOS43MDYyIDc3LjM2MzYgMTkuMjgzNCA3Ni44MzUgMTguOTg3NEM3Ni4zMjc2IDE4LjY3MDIgNzUuNzI1MSAxOC41MTE3IDc1LjAyNzQgMTguNTExN0M3NC4zNTA5IDE4LjUxMTcgNzMuNzQ4NCAxOC42NzAyIDczLjIxOTggMTguOTg3NEM3Mi42OTEzIDE5LjI4MzQgNzIuMjc5IDE5LjcwNjIgNzEuOTgzIDIwLjI1NTlDNzEuNjg3IDIwLjgwNTYgNzEuNTM5MSAyMS40Mzk4IDcxLjUzOTEgMjIuMTU4NkM3MS41MzkxIDIyLjg1NjMgNzEuNjg3IDIzLjQ5MDYgNzEuOTgzIDI0LjA2MTRDNzIuMjc5IDI0LjYxMTEgNzIuNjkxMyAyNS4wNDQ1IDczLjIxOTggMjUuMzYxNkM3My43NDg0IDI1LjY1NzYgNzQuMzUwOSAyNS44MDU2IDc1LjAyNzQgMjUuODA1NloiIGZpbGw9IiMwMDdERkMiPjwvcGF0aD48cGF0aCBjbGFzcz0iY2N1c3RvbSIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04Ny4zMDU3IDM1Ljg5MDJDODguNTk1MyAzNi40ODIxIDkwLjA4NTggMzYuNzc4MSA5MS43NzcyIDM2Ljc3ODFDOTMuNDI2MiAzNi43NzgxIDk0Ljg5NTYgMzYuNDUwNCA5Ni4xODUyIDM1Ljc5NUM5Ny40NzQ5IDM1LjEzOTYgOTguNDg5NiAzNC4yMzA2IDk5LjIyOTYgMzMuMDY3OEM5OS45Njk1IDMxLjkwNSAxMDAuMzQgMzAuNTMwOCAxMDAuMzQgMjguOTQ1MVYxNC40NTI1SDk1LjU4MjZWMTUuNDg4Qzk1LjIyODggMTUuMTkwMiA5NC44MjcgMTQuOTQwMiA5NC4zNzc2IDE0LjczNzlDOTMuNTUzIDE0LjMzNjIgOTIuNjEyMiAxNC4xMzUzIDkxLjU1NTIgMTQuMTM1M0M5MC4xMzg3IDE0LjEzNTMgODguODgwNyAxNC40NzM2IDg3Ljc4MTQgMTUuMTUwMUM4Ni42ODE5IDE1LjgwNTUgODUuODE1MiAxNi43MTQ2IDg1LjE4MDkgMTcuODc3NEM4NC41NDY2IDE5LjAxOTEgODQuMjI5NiAyMC4zMDg3IDg0LjIyOTYgMjEuNzQ2NEM4NC4yMjk2IDIzLjE2MjkgODQuNTQ2NiAyNC40NTI1IDg1LjE4MDkgMjUuNjE1M0M4NS44MTUyIDI2Ljc3ODEgODYuNjgxOSAyNy42OTc4IDg3Ljc4MTQgMjguMzc0M0M4OC44ODA3IDI5LjA1MDggOTAuMTM4NyAyOS4zODkxIDkxLjU1NTIgMjkuMzg5MUM5Mi41OTExIDI5LjM4OTEgOTMuNTMxOSAyOS4xODgzIDk0LjM3NzYgMjguNzg2NkM5NC43ODcyIDI4LjU5MiA5NS4xNTcyIDI4LjM2MjcgOTUuNDg3NSAyOC4wOTg2VjI5LjA3MkM5NS40ODc1IDMwLjE1MDIgOTUuMTM4NyAzMC45ODUzIDk0LjQ0MSAzMS41NzczQzkzLjc2NDUgMzIuMTY5MyA5Mi44MjM3IDMyLjQ2NTIgOTEuNjE4NiAzMi40NjUyQzkwLjY0NjEgMzIuNDY1MiA4OS44MTEgMzIuMjk2MSA4OS4xMTMzIDMxLjk1NzhDODguNDM2OCAzMS42MTk2IDg3LjgyMzYgMzEuMTIyNyA4Ny4yNzM5IDMwLjQ2NzNMODQuMjkzIDMzLjQ0ODNDODUuMDMyOSAzNC41MDU0IDg2LjAzNzIgMzUuMzE5NCA4Ny4zMDU3IDM1Ljg5MDJaTTk0LjIxOSAyNC42MzIyQzkzLjczMjcgMjQuOTI4MiA5My4xNTE0IDI1LjA3NjIgOTIuNDc0OCAyNS4wNzYyQzkxLjc5ODMgMjUuMDc2MiA5MS4yMDYzIDI0LjkyODIgOTAuNjk4OSAyNC42MzIyQzkwLjIxMjYgMjQuMzM2MiA4OS44MzIxIDIzLjkzNDUgODkuNTU3MyAyMy40MjcxQzg5LjI4MjQgMjIuODk4NiA4OS4xNDUgMjIuMzM4MyA4OS4xNDUgMjEuNzQ2NEM4OS4xNDUgMjEuMTEyMSA4OS4yODI0IDIwLjU0MTMgODkuNTU3MyAyMC4wMzM5Qzg5LjgzMjEgMTkuNTI2NSA5MC4yMjMyIDE5LjEyNDggOTAuNzMwNiAxOC44Mjg4QzkxLjIzOCAxOC41MzI4IDkxLjgxOTQgMTguMzg0OCA5Mi40NzQ4IDE4LjM4NDhDOTMuMTUxNCAxOC4zODQ4IDkzLjczMjcgMTguNTMyOCA5NC4yMTkgMTguODI4OEM5NC43MjY0IDE5LjEyNDggOTUuMTA2OSAxOS41MjY1IDk1LjM2MDcgMjAuMDMzOUM5NS42MzU1IDIwLjU0MTMgOTUuNzcyOSAyMS4xMTIxIDk1Ljc3MjkgMjEuNzQ2NEM5NS43NzI5IDIyLjM4MDYgOTUuNjM1NSAyMi45NTE0IDk1LjM2MDcgMjMuNDU4OEM5NS4xMDY5IDIzLjk0NTEgOTQuNzI2NCAyNC4zMzYyIDk0LjIxOSAyNC42MzIyWiIgZmlsbD0iIzAwN0RGQyI+PC9wYXRoPjxwYXRoIGNsYXNzPSJjY3VzdG9tIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTExMC41NTEgMzAuMjEzNkMxMDguOTY1IDMwLjIxMzYgMTA3LjUyNyAyOS44NjQ4IDEwNi4yMzggMjkuMTY3MUMxMDQuOTY5IDI4LjQ0ODMgMTAzLjk2NSAyNy40NzU4IDEwMy4yMjUgMjYuMjQ5NUMxMDIuNDg1IDI1LjAyMzMgMTAyLjExNSAyMy42NDkxIDEwMi4xMTUgMjIuMTI2OUMxMDIuMTE1IDIwLjYwNDcgMTAyLjQ4NSAxOS4yNDExIDEwMy4yMjUgMTguMDM2QzEwMy45NjUgMTYuODMwOSAxMDQuOTY5IDE1Ljg3OTUgMTA2LjIzOCAxNS4xODE5QzEwNy41MDYgMTQuNDYzIDEwOC45NDQgMTQuMTAzNiAxMTAuNTUxIDE0LjEwMzZDMTEyLjE1NyAxNC4xMDM2IDExMy41OTUgMTQuNDUyNSAxMTQuODYzIDE1LjE1MDFDMTE2LjEzMiAxNS44NDc4IDExNy4xMzYgMTYuODA5OCAxMTcuODc2IDE4LjAzNkMxMTguNjE2IDE5LjI0MTEgMTE4Ljk4NiAyMC42MDQ3IDExOC45ODYgMjIuMTI2OUMxMTguOTg2IDIzLjY0OTEgMTE4LjYxNiAyNS4wMjMzIDExNy44NzYgMjYuMjQ5NUMxMTcuMTM2IDI3LjQ3NTggMTE2LjEzMiAyOC40NDgzIDExNC44NjMgMjkuMTY3MUMxMTMuNTk1IDI5Ljg2NDggMTEyLjE1NyAzMC4yMTM2IDExMC41NTEgMzAuMjEzNlpNMTEwLjU1MSAyNS44MDU2QzExMS4yNDggMjUuODA1NiAxMTEuODYxIDI1LjY1NzYgMTEyLjM5IDI1LjM2MTZDMTEyLjkxOCAyNS4wNDQ1IDExMy4zMiAyNC42MTExIDExMy41OTUgMjQuMDYxNEMxMTMuODkxIDIzLjQ5MDYgMTE0LjAzOSAyMi44NDU3IDExNC4wMzkgMjIuMTI2OUMxMTQuMDM5IDIxLjQwODEgMTEzLjg5MSAyMC43ODQ0IDExMy41OTUgMjAuMjU1OUMxMTMuMjk5IDE5LjcwNjIgMTEyLjg4NyAxOS4yODM0IDExMi4zNTggMTguOTg3NEMxMTEuODUxIDE4LjY3MDIgMTExLjI0OCAxOC41MTE3IDExMC41NTEgMTguNTExN0MxMDkuODc0IDE4LjUxMTcgMTA5LjI3MSAxOC42NzAyIDEwOC43NDMgMTguOTg3NEMxMDguMjE0IDE5LjI4MzQgMTA3LjgwMiAxOS43MDYyIDEwNy41MDYgMjAuMjU1OUMxMDcuMjEgMjAuODA1NiAxMDcuMDYyIDIxLjQzOTggMTA3LjA2MiAyMi4xNTg2QzEwNy4wNjIgMjIuODU2MyAxMDcuMjEgMjMuNDkwNiAxMDcuNTA2IDI0LjA2MTRDMTA3LjgwMiAyNC42MTExIDEwOC4yMTQgMjUuMDQ0NSAxMDguNzQzIDI1LjM2MTZDMTA5LjI3MSAyNS42NTc2IDEwOS44NzQgMjUuODA1NiAxMTAuNTUxIDI1LjgwNTZaIiBmaWxsPSIjMDA3REZDIj48L3BhdGg+PHBhdGggY2xhc3M9ImNjdXN0b20iIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTM3LjI4MSAzMC4xODE5QzEzNi4yNDYgMzAuMTgxOSAxMzUuMjk0IDI5Ljk4MTEgMTM0LjQyNyAyOS41Nzk0QzEzMy45NzEgMjkuMzY4IDEzMy41NTkgMjkuMTE1NiAxMzMuMTkxIDI4LjgyMjJWMzYuMzY1OUgxMjguNDAyVjE0LjQ1MjVIMTMzLjI1NFYxNS41MTYyQzEzMy42MDYgMTUuMjI4MyAxMzMuOTk3IDE0Ljk3OTQgMTM0LjQyNyAxNC43Njk2QzEzNS4yOTQgMTQuMzQ2NyAxMzYuMjQ2IDE0LjEzNTMgMTM3LjI4MSAxNC4xMzUzQzEzOC43NCAxNC4xMzUzIDE0MC4wMyAxNC40ODQyIDE0MS4xNSAxNS4xODE5QzE0Mi4yOTIgMTUuODc5NSAxNDMuMTggMTYuODMwOSAxNDMuODE0IDE4LjAzNkMxNDQuNDcgMTkuMjQxMSAxNDQuNzk3IDIwLjYxNTMgMTQ0Ljc5NyAyMi4xNTg2QzE0NC43OTcgMjMuNzAyIDE0NC40NyAyNS4wNzYyIDE0My44MTQgMjYuMjgxM0MxNDMuMTggMjcuNDg2NCAxNDIuMjkyIDI4LjQzNzcgMTQxLjE1IDI5LjEzNTRDMTQwLjAzIDI5LjgzMzEgMTM4Ljc0IDMwLjE4MTkgMTM3LjI4MSAzMC4xODE5Wk0xMzYuMzk0IDI1LjgwNTZDMTM3LjA5MSAyNS44MDU2IDEzNy42OTQgMjUuNjQ3IDEzOC4yMDEgMjUuMzI5OUMxMzguNzMgMjUuMDEyOCAxMzkuMTQyIDI0LjU3OTMgMTM5LjQzOCAyNC4wMjk3QzEzOS43MzQgMjMuNDggMTM5Ljg4MiAyMi44NTYzIDEzOS44ODIgMjIuMTU4NkMxMzkuODgyIDIxLjQzOTggMTM5LjczNCAyMC44MDU2IDEzOS40MzggMjAuMjU1OUMxMzkuMTQyIDE5LjcwNjIgMTM4LjczIDE5LjI4MzQgMTM4LjIwMSAxOC45ODc0QzEzNy42OTQgMTguNjcwMiAxMzcuMTAyIDE4LjUxMTcgMTM2LjQyNSAxOC41MTE3QzEzNS43NDkgMTguNTExNyAxMzUuMTQ2IDE4LjY3MDIgMTM0LjYxOCAxOC45ODc0QzEzNC4xMSAxOS4yODM0IDEzMy43MDkgMTkuNzA2MiAxMzMuNDEzIDIwLjI1NTlDMTMzLjExNyAyMC44MDU2IDEzMi45NjkgMjEuNDM5OCAxMzIuOTY5IDIyLjE1ODZDMTMyLjk2OSAyMi44NTYzIDEzMy4xMDYgMjMuNDggMTMzLjM4MSAyNC4wMjk3QzEzMy42NzcgMjQuNTc5MyAxMzQuMDg5IDI1LjAxMjggMTM0LjYxOCAyNS4zMjk5QzEzNS4xNDYgMjUuNjQ3IDEzNS43MzggMjUuODA1NiAxMzYuMzk0IDI1LjgwNTZaIiBmaWxsPSIjMDA3REZDIj48L3BhdGg+PHBhdGggY2xhc3M9ImNjdXN0b20iIGQ9Ik0xNDkuNTQ2IDI5Ljg5NjVDMTUwLjQzNCAzMC4xMjkxIDE1MS4zMzIgMzAuMjQ1MyAxNTIuMjQxIDMwLjI0NTNDMTU0LjE2NSAzMC4yNDUzIDE1NS42ODcgMjkuODAxNCAxNTYuODA4IDI4LjkxMzRDMTU3Ljk0OSAyOC4wMjU1IDE1OC41MiAyNi44MzEgMTU4LjUyIDI1LjMyOTlDMTU4LjUyIDI0LjM1NzQgMTU4LjM0MSAyMy41NzUxIDE1Ny45ODEgMjIuOTgzMkMxNTcuNjIyIDIyLjM3MDEgMTU3LjE1NyAyMS44ODM4IDE1Ni41ODYgMjEuNTI0NEMxNTYuMDE1IDIxLjE2NSAxNTUuNDEyIDIwLjg3OTUgMTU0Ljc3OCAyMC42NjgxQzE1NC4xNDQgMjAuNDU2NyAxNTMuNTQxIDIwLjI3NyAxNTIuOTcxIDIwLjEyOUMxNTIuNCAxOS45ODEgMTUxLjkzNSAxOS44MTE5IDE1MS41NzUgMTkuNjIxNkMxNTEuMjE2IDE5LjQzMTMgMTUxLjAzNiAxOS4xNzc2IDE1MS4wMzYgMTguODYwNUMxNTEuMDM2IDE4LjU2NDUgMTUxLjE3NCAxOC4zNDI1IDE1MS40NDggMTguMTk0NUMxNTEuNzIzIDE4LjAyNTQgMTUyLjEzNSAxNy45NDA5IDE1Mi42ODUgMTcuOTQwOUMxNTMuMjU2IDE3Ljk0MDkgMTUzLjgzNyAxOC4wNTcxIDE1NC40MjkgMTguMjg5N0MxNTUuMDQyIDE4LjUyMjIgMTU1LjU5MiAxOC45MjQgMTU2LjA3OCAxOS40OTQ4TDE1OC44MzcgMTYuNzA0MUMxNTguMTQgMTUuODE2MSAxNTcuMjMxIDE1LjE1MDEgMTU2LjExIDE0LjcwNjJDMTU1LjAxMSAxNC4yNDExIDE1My44MDYgMTQuMDA4NSAxNTIuNDk1IDE0LjAwODVDMTUxLjI0OCAxNC4wMDg1IDE1MC4xNTkgMTQuMjE5OSAxNDkuMjI5IDE0LjY0MjdDMTQ4LjI5OCAxNS4wNjU2IDE0Ny41NzkgMTUuNjQ3IDE0Ny4wNzIgMTYuMzg2OUMxNDYuNTY1IDE3LjEwNTcgMTQ2LjMxMSAxNy45NjIgMTQ2LjMxMSAxOC45NTU3QzE0Ni4zMTEgMTkuODg1OSAxNDYuNDkxIDIwLjY1NzYgMTQ2Ljg1IDIxLjI3MDdDMTQ3LjIwOSAyMS44NjI2IDE0Ny42NzUgMjIuMzI3OCAxNDguMjQ1IDIyLjY2NkMxNDguODE2IDIzLjAwNDMgMTQ5LjQxOSAyMy4yNjg2IDE1MC4wNTMgMjMuNDU4OEMxNTAuNjg3IDIzLjY0OTEgMTUxLjI5IDIzLjgyODggMTUxLjg2MSAyMy45OThDMTUyLjQzMSAyNC4xNDYgMTUyLjg5NyAyNC4zMjU3IDE1My4yNTYgMjQuNTM3MUMxNTMuNjM3IDI0LjcyNzQgMTUzLjgyNyAyNS4wMTI4IDE1My44MjcgMjUuMzkzM0MxNTMuODI3IDI1LjY4OTMgMTUzLjY2OCAyNS45MjE4IDE1My4zNTEgMjYuMDkxQzE1My4wNTUgMjYuMjYwMSAxNTIuNjIyIDI2LjM0NDcgMTUyLjA1MSAyNi4zNDQ3QzE1MS4yMjYgMjYuMzQ0NyAxNTAuNDY1IDI2LjE5NjcgMTQ5Ljc2OCAyNS45MDA3QzE0OS4wNyAyNS41ODM2IDE0OC40NjcgMjUuMTUwMiAxNDcuOTYgMjQuNjAwNUwxNDUuMjAxIDI3LjM5MTJDMTQ1LjczIDI3Ljk2MiAxNDYuMzY0IDI4LjQ2OTUgMTQ3LjEwNCAyOC45MTM0QzE0Ny44NjUgMjkuMzM2MiAxNDguNjc5IDI5LjY2MzkgMTQ5LjU0NiAyOS44OTY1WiIgZmlsbD0iIzAwN0RGQyI+PC9wYXRoPjxwYXRoIGNsYXNzPSJjY3VzdG9tIiBkPSJNMTY3LjM2OCAzMC4yMTM2QzE2NS45NTIgMzAuMjEzNiAxNjQuNjk0IDI5LjkyODIgMTYzLjU5NSAyOS4zNTc0QzE2Mi41MTYgMjguNzY1NCAxNjEuNjcxIDI3Ljk2MiAxNjEuMDU4IDI2Ljk0NzJDMTYwLjQ0NCAyNS45MTEzIDE2MC4xMzggMjQuNzI3NCAxNjAuMTM4IDIzLjM5NTRWMTQuNDUyNUgxNjQuOTlWMjMuMzMyQzE2NC45OSAyMy44NjA1IDE2NS4wNzQgMjQuMzE1MSAxNjUuMjQ0IDI0LjY5NTZDMTY1LjQzNCAyNS4wNzYyIDE2NS43MDkgMjUuMzcyMiAxNjYuMDY4IDI1LjU4MzZDMTY2LjQyOCAyNS43OTUgMTY2Ljg2MSAyNS45MDA3IDE2Ny4zNjggMjUuOTAwN0MxNjguMDg3IDI1LjkwMDcgMTY4LjY1OCAyNS42Nzg3IDE2OS4wODEgMjUuMjM0N0MxNjkuNTA0IDI0Ljc2OTYgMTY5LjcxNSAyNC4xMzU0IDE2OS43MTUgMjMuMzMyVjE0LjQ1MjVIMTc0LjU2N1YyMy4zNjM3QzE3NC41NjcgMjQuNzE2OCAxNzQuMjYxIDI1LjkxMTMgMTczLjY0NyAyNi45NDcyQzE3My4wMzQgMjcuOTYyIDE3Mi4xODkgMjguNzY1NCAxNzEuMTEgMjkuMzU3NEMxNzAuMDMyIDI5LjkyODIgMTY4Ljc4NSAzMC4yMTM2IDE2Ny4zNjggMzAuMjEzNloiIGZpbGw9IiMwMDdERkMiPjwvcGF0aD48cGF0aCBjbGFzcz0iY2N1c3RvbSIgZD0iTTE4MS44MzEgMTQuNDUyNUgxNzYuOTc5VjI5Ljg2NDhIMTgxLjgzMVYyMC44NTg0QzE4MS44MzEgMjAuMzI5OSAxODEuOTM3IDE5Ljg4NTkgMTgyLjE0OCAxOS41MjY1QzE4Mi4zODEgMTkuMTY3MSAxODIuNjg4IDE4Ljg5MjIgMTgzLjA2OCAxOC43MDJDMTgzLjQ0OSAxOC40OTA1IDE4My44ODIgMTguMzg0OCAxODQuMzY4IDE4LjM4NDhDMTg1LjA2NiAxOC4zODQ4IDE4NS42NDcgMTguNjA2OCAxODYuMTEyIDE5LjA1MDhDMTg2LjU5OSAxOS40NzM2IDE4Ni44NDIgMjAuMDc2MiAxODYuODQyIDIwLjg1ODRWMjkuODY0OEgxOTEuNjk0VjIwLjg1ODRDMTkxLjY5NCAyMC4zMjk5IDE5MS44IDE5Ljg4NTkgMTkyLjAxMSAxOS41MjY1QzE5Mi4yNDQgMTkuMTY3MSAxOTIuNTUgMTguODkyMiAxOTIuOTMxIDE4LjcwMkMxOTMuMzExIDE4LjQ5MDUgMTkzLjc0NSAxOC4zODQ4IDE5NC4yMzEgMTguMzg0OEMxOTQuOTI5IDE4LjM4NDggMTk1LjUxIDE4LjYwNjggMTk1Ljk3NSAxOS4wNTA4QzE5Ni40NjEgMTkuNDczNiAxOTYuNzA0IDIwLjA3NjIgMTk2LjcwNCAyMC44NTg0VjI5Ljg2NDhIMjAxLjU1N1YyMC4zMTkzQzIwMS41NTcgMTkuMDI5NyAyMDEuMjgyIDE3LjkzMDMgMjAwLjczMiAxNy4wMjEyQzIwMC4yMDMgMTYuMDkwOSAxOTkuNDc0IDE1LjM4MjcgMTk4LjU0NCAxNC44OTY1QzE5Ny42MzUgMTQuMzg5IDE5Ni41ODggMTQuMTM1MyAxOTUuNDA0IDE0LjEzNTNDMTk0LjE5OSAxNC4xMzUzIDE5My4xMSAxNC4zOTk2IDE5Mi4xMzggMTQuOTI4MkMxOTEuNTA2IDE1LjI2NDkgMTkwLjk1NCAxNS42OTk1IDE5MC40ODEgMTYuMjMxOUMxOTAuMDQgMTUuNjc1IDE4OS41MDQgMTUuMjE5MyAxODguODcxIDE0Ljg2NDdDMTg4LjAyNiAxNC4zNzg1IDE4Ny4wNjQgMTQuMTM1MyAxODUuOTg2IDE0LjEzNTNDMTg0Ljg0NCAxNC4xMzUzIDE4My44MTkgMTQuMzc4NSAxODIuOTEgMTQuODY0N0MxODIuNTE0IDE1LjA2NyAxODIuMTU1IDE1LjMwOTMgMTgxLjgzMSAxNS41OTE2VjE0LjQ1MjVaIiBmaWxsPSIjMDA3REZDIj48L3BhdGg+PC9zdmc+\"></figure>",
+                "label": "Content",
+                "customClass": "",
+                "refreshOnChange": false,
+                "hidden": false,
+                "hiddenInPdf": false,
+                "modalEdit": false,
+                "key": "content",
+                "tags": [],
+                "properties": {},
+                "conditional": {
+                    "show": null,
+                    "when": null,
+                    "eq": "",
+                    "json": ""
+                },
+                "customConditional": "",
+                "logic": [],
+                "attributes": {},
+                "creatorPermissions": "",
+                "permissions": [
+                    {
+                        "user": {},
+                        "permissionLevel": ""
+                    }
+                ],
+                "type": "content",
+                "input": false,
+                "placeholder": "",
+                "prefix": "",
+                "suffix": "",
+                "multiple": false,
+                "defaultValue": null,
+                "protected": false,
+                "unique": false,
+                "persistent": true,
+                "clearOnHide": true,
+                "refreshOn": "",
+                "redrawOn": "",
+                "tableView": false,
+                "dataGridLabel": false,
+                "labelPosition": "top",
+                "description": "",
+                "errorLabel": "",
+                "tooltip": "",
+                "hideLabel": false,
+                "tabindex": "",
+                "disabled": false,
+                "autofocus": false,
+                "dbIndex": false,
+                "customDefaultValue": "",
+                "calculateValue": "",
+                "calculateServer": false,
+                "widget": null,
+                "validateOn": "change",
+                "validate": {
+                    "required": false,
+                    "custom": "",
+                    "customPrivate": false,
+                    "strictDateValidation": false,
+                    "multiple": false,
+                    "unique": false
+                },
+                "overlay": {
+                    "style": "",
+                    "left": "",
+                    "top": "",
+                    "width": "",
+                    "height": ""
+                },
+                "allowCalculateOverride": false,
+                "encrypted": false,
+                "showCharCount": false,
+                "showWordCount": false,
+                "allowMultipleMasks": false,
+                "addons": []
+            },
+            {
+                "title": "Ticket Details",
+                "theme": "default",
+                "tooltip": "",
+                "customClass": "",
+                "collapsible": false,
+                "hidden": false,
+                "hiddenInPdf": false,
+                "hideLabel": false,
+                "disabled": false,
+                "modalEdit": false,
+                "key": "ticketDetails",
+                "tags": [],
+                "properties": {},
+                "customConditional": "",
+                "conditional": {
+                    "json": "",
+                    "show": null,
+                    "when": null,
+                    "eq": ""
+                },
+                "logic": [],
+                "attributes": {},
+                "creatorPermissions": "",
+                "permissions": [
+                    {
+                        "user": {},
+                        "permissionLevel": ""
+                    }
+                ],
+                "type": "panel",
+                "label": "Panel",
+                "breadcrumb": "default",
+                "tabindex": "",
+                "input": false,
+                "placeholder": "",
+                "prefix": "",
+                "suffix": "",
+                "multiple": false,
+                "defaultValue": null,
+                "protected": false,
+                "unique": false,
+                "persistent": false,
+                "clearOnHide": false,
+                "refreshOn": "",
+                "redrawOn": "",
+                "tableView": false,
+                "dataGridLabel": false,
+                "labelPosition": "top",
+                "description": "",
+                "errorLabel": "",
+                "autofocus": false,
+                "dbIndex": false,
+                "customDefaultValue": "",
+                "calculateValue": "",
+                "calculateServer": false,
+                "widget": null,
+                "validateOn": "change",
+                "validate": {
+                    "required": false,
+                    "custom": "",
+                    "customPrivate": false,
+                    "strictDateValidation": false,
+                    "multiple": false,
+                    "unique": false
+                },
+                "overlay": {
+                    "style": "",
+                    "left": "",
+                    "top": "",
+                    "width": "",
+                    "height": ""
+                },
+                "allowCalculateOverride": false,
+                "encrypted": false,
+                "showCharCount": false,
+                "showWordCount": false,
+                "allowMultipleMasks": false,
+                "addons": [],
+                "tree": false,
+                "lazyLoad": false,
+                "components": [
+                    {
+                        "label": "Columns",
+                        "columns": [
+                            {
+                                "components": [
+                                    {
+                                        "label": "Name",
+                                        "labelPosition": "top",
+                                        "placeholder": "",
+                                        "description": "",
+                                        "tooltip": "",
+                                        "prefix": "",
+                                        "suffix": "",
+                                        "widget": {
+                                            "type": "input"
+                                        },
+                                        "inputMask": "",
+                                        "displayMask": "",
+                                        "allowMultipleMasks": false,
+                                        "customClass": "",
+                                        "tabindex": "",
+                                        "autocomplete": "",
+                                        "hidden": false,
+                                        "hiddenInPdf": false,
+                                        "hideLabel": false,
+                                        "showWordCount": false,
+                                        "showCharCount": false,
+                                        "mask": false,
+                                        "autofocus": false,
+                                        "spellcheck": true,
+                                        "disabled": false,
+                                        "tableView": true,
+                                        "modalEdit": false,
+                                        "multiple": false,
+                                        "inputFormat": "plain",
+                                        "case": "",
+                                        "truncateMultipleSpaces": false,
+                                        "redrawOn": "",
+                                        "clearOnHide": true,
+                                        "customDefaultValue": "",
+                                        "calculateValue": "",
+                                        "allowCalculateOverride": false,
+                                        "validateOn": "change",
+                                        "validate": {
+                                            "required": false,
+                                            "pattern": "",
+                                            "customMessage": "",
+                                            "custom": "",
+                                            "customPrivate": false,
+                                            "json": "",
+                                            "minLength": "",
+                                            "maxLength": "",
+                                            "strictDateValidation": false,
+                                            "multiple": false,
+                                            "unique": false
+                                        },
+                                        "unique": false,
+                                        "errorLabel": "",
+                                        "errors": "",
+                                        "key": "name",
+                                        "tags": [],
+                                        "properties": {},
+                                        "conditional": {
+                                            "show": null,
+                                            "when": null,
+                                            "eq": "",
+                                            "json": ""
+                                        },
+                                        "customConditional": "",
+                                        "logic": [],
+                                        "attributes": {},
+                                        "creatorPermissions": "",
+                                        "permissions": [
+                                            {
+                                                "user": {},
+                                                "permissionLevel": ""
+                                            }
+                                        ],
+                                        "type": "textfield",
+                                        "input": true,
+                                        "protected": false,
+                                        "persistent": true,
+                                        "refreshOn": "",
+                                        "dataGridLabel": false,
+                                        "dbIndex": false,
+                                        "calculateServer": false,
+                                        "overlay": {
+                                            "style": "",
+                                            "left": "",
+                                            "top": "",
+                                            "width": "",
+                                            "height": ""
+                                        },
+                                        "encrypted": false,
+                                        "addons": [],
+                                        "inputType": "text",
+                                        "defaultValue": ""
+                                    },
+                                    {
+                                        "label": "Email",
+                                        "labelPosition": "top",
+                                        "placeholder": "",
+                                        "description": "",
+                                        "tooltip": "",
+                                        "prefix": "",
+                                        "suffix": "",
+                                        "widget": {
+                                            "type": "input"
+                                        },
+                                        "displayMask": "",
+                                        "customClass": "",
+                                        "tabindex": "",
+                                        "autocomplete": "",
+                                        "hidden": false,
+                                        "hiddenInPdf": false,
+                                        "hideLabel": false,
+                                        "mask": false,
+                                        "autofocus": false,
+                                        "spellcheck": true,
+                                        "disabled": false,
+                                        "tableView": true,
+                                        "modalEdit": false,
+                                        "multiple": false,
+                                        "inputFormat": "plain",
+                                        "case": "",
+                                        "truncateMultipleSpaces": false,
+                                        "redrawOn": "",
+                                        "clearOnHide": true,
+                                        "customDefaultValue": "",
+                                        "calculateValue": "",
+                                        "allowCalculateOverride": false,
+                                        "validateOn": "change",
+                                        "validate": {
+                                            "required": false,
+                                            "pattern": "",
+                                            "customMessage": "",
+                                            "custom": "",
+                                            "customPrivate": false,
+                                            "json": "",
+                                            "minLength": "",
+                                            "maxLength": "",
+                                            "strictDateValidation": false,
+                                            "multiple": false,
+                                            "unique": false
+                                        },
+                                        "unique": false,
+                                        "kickbox": {
+                                            "enabled": false
+                                        },
+                                        "errorLabel": "",
+                                        "errors": "",
+                                        "key": "email",
+                                        "tags": [],
+                                        "properties": {},
+                                        "conditional": {
+                                            "show": null,
+                                            "when": null,
+                                            "eq": "",
+                                            "json": ""
+                                        },
+                                        "customConditional": "",
+                                        "logic": [],
+                                        "attributes": {},
+                                        "creatorPermissions": "",
+                                        "permissions": [
+                                            {
+                                                "user": {},
+                                                "permissionLevel": ""
+                                            }
+                                        ],
+                                        "type": "email",
+                                        "input": true,
+                                        "protected": false,
+                                        "persistent": true,
+                                        "refreshOn": "",
+                                        "dataGridLabel": false,
+                                        "dbIndex": false,
+                                        "calculateServer": false,
+                                        "overlay": {
+                                            "style": "",
+                                            "left": "",
+                                            "top": "",
+                                            "width": "",
+                                            "height": ""
+                                        },
+                                        "encrypted": false,
+                                        "showCharCount": false,
+                                        "showWordCount": false,
+                                        "allowMultipleMasks": false,
+                                        "addons": [],
+                                        "inputType": "email",
+                                        "inputMask": "",
+                                        "defaultValue": null
+                                    }
+                                ],
+                                "width": 6,
+                                "offset": 0,
+                                "push": 0,
+                                "pull": 0,
+                                "size": "md",
+                                "currentWidth": 6
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "label": "Ticket No.",
+                                        "labelPosition": "top",
+                                        "placeholder": "",
+                                        "description": "",
+                                        "tooltip": "",
+                                        "prefix": "",
+                                        "suffix": "",
+                                        "widget": {
+                                            "type": "input"
+                                        },
+                                        "inputMask": "",
+                                        "displayMask": "",
+                                        "allowMultipleMasks": false,
+                                        "customClass": "",
+                                        "tabindex": "",
+                                        "autocomplete": "",
+                                        "hidden": false,
+                                        "hiddenInPdf": false,
+                                        "hideLabel": false,
+                                        "showWordCount": false,
+                                        "showCharCount": false,
+                                        "mask": false,
+                                        "autofocus": false,
+                                        "spellcheck": true,
+                                        "disabled": true,
+                                        "tableView": true,
+                                        "modalEdit": false,
+                                        "multiple": false,
+                                        "inputFormat": "plain",
+                                        "case": "",
+                                        "truncateMultipleSpaces": false,
+                                        "redrawOn": "",
+                                        "clearOnHide": true,
+                                        "customDefaultValue": "value = Math.floor(Math.random() * 10000)",
+                                        "calculateValue": "",
+                                        "allowCalculateOverride": false,
+                                        "validateOn": "change",
+                                        "validate": {
+                                            "required": false,
+                                            "pattern": "",
+                                            "customMessage": "",
+                                            "custom": "",
+                                            "customPrivate": false,
+                                            "json": "",
+                                            "minLength": "",
+                                            "maxLength": "",
+                                            "strictDateValidation": false,
+                                            "multiple": false,
+                                            "unique": false
+                                        },
+                                        "unique": false,
+                                        "errorLabel": "",
+                                        "errors": "",
+                                        "key": "ticketNo",
+                                        "tags": [],
+                                        "properties": {},
+                                        "conditional": {
+                                            "show": null,
+                                            "when": null,
+                                            "eq": "",
+                                            "json": ""
+                                        },
+                                        "customConditional": "",
+                                        "logic": [],
+                                        "attributes": {},
+                                        "creatorPermissions": "",
+                                        "permissions": [
+                                            {
+                                                "user": {},
+                                                "permissionLevel": ""
+                                            }
+                                        ],
+                                        "type": "textfield",
+                                        "input": true,
+                                        "protected": false,
+                                        "persistent": true,
+                                        "refreshOn": "",
+                                        "dataGridLabel": false,
+                                        "dbIndex": false,
+                                        "calculateServer": false,
+                                        "overlay": {
+                                            "style": "",
+                                            "left": "",
+                                            "top": "",
+                                            "width": "",
+                                            "height": ""
+                                        },
+                                        "encrypted": false,
+                                        "addons": [],
+                                        "inputType": "text",
+                                        "defaultValue": ""
+                                    },
+                                    {
+                                        "label": "Department",
+                                        "widget": "choicesjs",
+                                        "hiddenInPdf": false,
+                                        "tableView": true,
+                                        "data": {
+                                            "values": [
+                                                {
+                                                    "value": "hr",
+                                                    "label": "Human Resources (HR)"
+                                                },
+                                                {
+                                                    "value": "finance",
+                                                    "label": "Finance"
+                                                },
+                                                {
+                                                    "value": "marketing",
+                                                    "label": "Marketing"
+                                                },
+                                                {
+                                                    "value": "sales",
+                                                    "label": "Sales"
+                                                },
+                                                {
+                                                    "value": "it",
+                                                    "label": "Information Technology (IT)"
+                                                },
+                                                {
+                                                    "value": "customer_service",
+                                                    "label": "Customer Service"
+                                                },
+                                                {
+                                                    "value": "r_and_d",
+                                                    "label": "Research and Development (R&D)"
+                                                },
+                                                {
+                                                    "value": "production",
+                                                    "label": "Production or Manufacturing"
+                                                },
+                                                {
+                                                    "value": "operations",
+                                                    "label": "Operations"
+                                                },
+                                                {
+                                                    "value": "legal",
+                                                    "label": "Legal"
+                                                },
+                                                {
+                                                    "value": "administration",
+                                                    "label": "Administration"
+                                                },
+                                                {
+                                                    "value": "procurement",
+                                                    "label": "Procurement"
+                                                },
+                                                {
+                                                    "value": "qa",
+                                                    "label": "Quality Assurance (QA)"
+                                                },
+                                                {
+                                                    "value": "pr",
+                                                    "label": "Public Relations (PR)"
+                                                },
+                                                {
+                                                    "value": "project_management",
+                                                    "label": "Project Management"
+                                                },
+                                                {
+                                                    "value": "accounting",
+                                                    "label": "Accounting"
+                                                },
+                                                {
+                                                    "value": "supply_chain",
+                                                    "label": "Supply Chain Management"
+                                                },
+                                                {
+                                                    "value": "product_development",
+                                                    "label": "Product Development"
+                                                },
+                                                {
+                                                    "value": "facilities_management",
+                                                    "label": "Facilities Management"
+                                                },
+                                                {
+                                                    "value": "compliance",
+                                                    "label": "Compliance and Regulatory Affairs"
+                                                },
+                                                {
+                                                    "value": "communications",
+                                                    "label": "Communications"
+                                                },
+                                                {
+                                                    "value": "ehs",
+                                                    "label": "Environmental Health and Safety (EHS)"
+                                                },
+                                                {
+                                                    "value": "business_development",
+                                                    "label": "Business Development"
+                                                },
+                                                {
+                                                    "value": "training_and_development",
+                                                    "label": "Training and Development"
+                                                },
+                                                {
+                                                    "value": "internal_audit",
+                                                    "label": "Internal Audit"
+                                                },
+                                                {
+                                                    "value": "diversity_inclusion",
+                                                    "label": "Diversity and Inclusion"
+                                                },
+                                                {
+                                                    "value": "innovation",
+                                                    "label": "Innovation"
+                                                },
+                                                {
+                                                    "value": "marketing_research",
+                                                    "label": "Marketing Research"
+                                                },
+                                                {
+                                                    "value": "information_security",
+                                                    "label": "Information Security"
+                                                },
+                                                {
+                                                    "value": "risk_management",
+                                                    "label": "Risk Management"
+                                                }
+                                            ],
+                                            "label": "Drop Down List",
+                                            "json": "",
+                                            "url": "",
+                                            "resource": "",
+                                            "custom": ""
+                                        },
+                                        "key": "department",
+                                        "permissions": [
+                                            {
+                                                "user": {},
+                                                "permissionLevel": ""
+                                            }
+                                        ],
+                                        "type": "select",
+                                        "input": true,
+                                        "placeholder": "",
+                                        "prefix": "",
+                                        "customClass": "",
+                                        "suffix": "",
+                                        "multiple": false,
+                                        "defaultValue": null,
+                                        "protected": false,
+                                        "unique": false,
+                                        "persistent": true,
+                                        "hidden": false,
+                                        "clearOnHide": true,
+                                        "refreshOn": "",
+                                        "redrawOn": "",
+                                        "modalEdit": false,
+                                        "dataGridLabel": false,
+                                        "labelPosition": "top",
+                                        "description": "",
+                                        "errorLabel": "",
+                                        "tooltip": "",
+                                        "hideLabel": false,
+                                        "tabindex": "",
+                                        "disabled": false,
+                                        "autofocus": false,
+                                        "dbIndex": false,
+                                        "customDefaultValue": "",
+                                        "calculateValue": "",
+                                        "calculateServer": false,
+                                        "attributes": {},
+                                        "validateOn": "change",
+                                        "validate": {
+                                            "required": false,
+                                            "custom": "",
+                                            "customPrivate": false,
+                                            "strictDateValidation": false,
+                                            "multiple": false,
+                                            "unique": false,
+                                            "onlyAvailableItems": false
+                                        },
+                                        "conditional": {
+                                            "show": null,
+                                            "when": null,
+                                            "eq": ""
+                                        },
+                                        "overlay": {
+                                            "style": "",
+                                            "left": "",
+                                            "top": "",
+                                            "width": "",
+                                            "height": ""
+                                        },
+                                        "allowCalculateOverride": false,
+                                        "encrypted": false,
+                                        "showCharCount": false,
+                                        "showWordCount": false,
+                                        "properties": {},
+                                        "allowMultipleMasks": false,
+                                        "addons": [],
+                                        "idPath": "id",
+                                        "clearOnRefresh": false,
+                                        "limit": 100,
+                                        "dataSrc": "values",
+                                        "valueProperty": "",
+                                        "lazyLoad": true,
+                                        "filter": "",
+                                        "searchEnabled": true,
+                                        "searchDebounce": 0.3,
+                                        "searchField": "",
+                                        "minSearch": 0,
+                                        "readOnlyValue": false,
+                                        "authenticate": false,
+                                        "ignoreCache": false,
+                                        "template": "<span>{{ item.label }}</span>",
+                                        "selectFields": "",
+                                        "selectThreshold": 0.3,
+                                        "uniqueOptions": false,
+                                        "fuseOptions": {
+                                            "include": "score",
+                                            "threshold": 0.3
+                                        },
+                                        "indexeddb": {
+                                            "filter": {}
+                                        },
+                                        "customOptions": {},
+                                        "useExactSearch": false
+                                    }
+                                ],
+                                "width": 6,
+                                "offset": 0,
+                                "push": 0,
+                                "pull": 0,
+                                "size": "md",
+                                "currentWidth": 6
+                            }
+                        ],
+                        "autoAdjust": false,
+                        "customClass": "",
+                        "hidden": false,
+                        "hiddenInPdf": false,
+                        "hideLabel": false,
+                        "modalEdit": false,
+                        "key": "columns",
+                        "tags": [],
+                        "properties": {},
+                        "conditional": {
+                            "show": null,
+                            "when": null,
+                            "eq": "",
+                            "json": ""
+                        },
+                        "customConditional": "",
+                        "logic": [],
+                        "attributes": {},
+                        "creatorPermissions": "",
+                        "permissions": [
+                            {
+                                "user": {},
+                                "permissionLevel": ""
+                            }
+                        ],
+                        "type": "columns",
+                        "input": false,
+                        "placeholder": "",
+                        "prefix": "",
+                        "suffix": "",
+                        "multiple": false,
+                        "defaultValue": null,
+                        "protected": false,
+                        "unique": false,
+                        "persistent": false,
+                        "clearOnHide": false,
+                        "refreshOn": "",
+                        "redrawOn": "",
+                        "tableView": false,
+                        "dataGridLabel": false,
+                        "labelPosition": "top",
+                        "description": "",
+                        "errorLabel": "",
+                        "tooltip": "",
+                        "tabindex": "",
+                        "disabled": false,
+                        "autofocus": false,
+                        "dbIndex": false,
+                        "customDefaultValue": "",
+                        "calculateValue": "",
+                        "calculateServer": false,
+                        "widget": null,
+                        "validateOn": "change",
+                        "validate": {
+                            "required": false,
+                            "custom": "",
+                            "customPrivate": false,
+                            "strictDateValidation": false,
+                            "multiple": false,
+                            "unique": false
+                        },
+                        "overlay": {
+                            "style": "",
+                            "left": "",
+                            "top": "",
+                            "width": "",
+                            "height": ""
+                        },
+                        "allowCalculateOverride": false,
+                        "encrypted": false,
+                        "showCharCount": false,
+                        "showWordCount": false,
+                        "allowMultipleMasks": false,
+                        "addons": [],
+                        "tree": false,
+                        "lazyLoad": false
+                    },
+                    {
+                        "label": "Describe the problem",
+                        "labelPosition": "top",
+                        "placeholder": "",
+                        "description": "",
+                        "tooltip": "",
+                        "prefix": "",
+                        "suffix": "",
+                        "widget": {
+                            "type": "input"
+                        },
+                        "displayMask": "",
+                        "editor": "ckeditor",
+                        "customClass": "",
+                        "tabindex": "",
+                        "autocomplete": "",
+                        "hidden": false,
+                        "hiddenInPdf": false,
+                        "hideLabel": false,
+                        "showWordCount": false,
+                        "showCharCount": false,
+                        "autofocus": false,
+                        "spellcheck": true,
+                        "disabled": false,
+                        "tableView": true,
+                        "modalEdit": false,
+                        "multiple": false,
+                        "inputFormat": "html",
+                        "case": "",
+                        "truncateMultipleSpaces": false,
+                        "redrawOn": "",
+                        "clearOnHide": true,
+                        "customDefaultValue": "",
+                        "calculateValue": "",
+                        "allowCalculateOverride": false,
+                        "validateOn": "change",
+                        "validate": {
+                            "required": false,
+                            "pattern": "",
+                            "customMessage": "",
+                            "custom": "",
+                            "customPrivate": false,
+                            "json": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "minWords": "",
+                            "maxWords": "",
+                            "strictDateValidation": false,
+                            "multiple": false,
+                            "unique": false
+                        },
+                        "unique": false,
+                        "errorLabel": "",
+                        "errors": "",
+                        "key": "describeTheProblem",
+                        "tags": [],
+                        "properties": {},
+                        "conditional": {
+                            "show": null,
+                            "when": null,
+                            "eq": "",
+                            "json": ""
+                        },
+                        "customConditional": "",
+                        "logic": [],
+                        "attributes": {},
+                        "creatorPermissions": "",
+                        "permissions": [
+                            {
+                                "user": {},
+                                "permissionLevel": ""
+                            }
+                        ],
+                        "type": "textarea",
+                        "rows": 3,
+                        "wysiwyg": false,
+                        "input": true,
+                        "protected": false,
+                        "persistent": true,
+                        "refreshOn": "",
+                        "dataGridLabel": false,
+                        "dbIndex": false,
+                        "calculateServer": false,
+                        "overlay": {
+                            "style": "",
+                            "left": "",
+                            "top": "",
+                            "width": "",
+                            "height": ""
+                        },
+                        "encrypted": false,
+                        "allowMultipleMasks": false,
+                        "addons": [],
+                        "mask": false,
+                        "inputType": "text",
+                        "inputMask": "",
+                        "fixedSize": true,
+                        "defaultValue": "",
+                        "isUploadEnabled": false
+                    },
+                    {
+                        "label": "Attachments",
+                        "labelPosition": "top",
+                        "description": "",
+                        "tooltip": "",
+                        "customClass": "",
+                        "tabindex": "",
+                        "hidden": false,
+                        "hiddenInPdf": false,
+                        "hideLabel": false,
+                        "autofocus": false,
+                        "disabled": false,
+                        "tableView": false,
+                        "modalEdit": false,
+                        "showImageEditor": true,
+                        "storage": "indexeddb",
+                        "image": false,
+                        "uploadOnly": false,
+                        "fileTypes": [
+                            {
+                                "label": "",
+                                "value": ""
+                            }
+                        ],
+                        "filePattern": "*",
+                        "fileMinSize": "0KB",
+                        "fileMaxSize": "1GB",
+                        "multiple": true,
+                        "redrawOn": "",
+                        "clearOnHide": true,
+                        "customDefaultValue": "",
+                        "calculateValue": "",
+                        "allowCalculateOverride": false,
+                        "validate": {
+                            "required": false,
+                            "customMessage": "",
+                            "custom": "",
+                            "customPrivate": false,
+                            "json": "",
+                            "strictDateValidation": false,
+                            "multiple": false,
+                            "unique": false
+                        },
+                        "errorLabel": "",
+                        "errors": "",
+                        "key": "attachments",
+                        "tags": [],
+                        "properties": {},
+                        "conditional": {
+                            "show": null,
+                            "when": null,
+                            "eq": "",
+                            "json": ""
+                        },
+                        "customConditional": "",
+                        "logic": [],
+                        "attributes": {},
+                        "creatorPermissions": "",
+                        "permissions": [
+                            {
+                                "user": {},
+                                "permissionLevel": ""
+                            }
+                        ],
+                        "type": "file",
+                        "options": {
+                            "showImageEditor": true
+                        },
+                        "imageSize": "200",
+                        "input": true,
+                        "placeholder": "",
+                        "prefix": "",
+                        "suffix": "",
+                        "defaultValue": null,
+                        "protected": false,
+                        "unique": false,
+                        "persistent": true,
+                        "refreshOn": "",
+                        "dataGridLabel": false,
+                        "dbIndex": false,
+                        "calculateServer": false,
+                        "widget": null,
+                        "validateOn": "change",
+                        "overlay": {
+                            "style": "",
+                            "left": "",
+                            "top": "",
+                            "width": "",
+                            "height": ""
+                        },
+                        "encrypted": false,
+                        "showCharCount": false,
+                        "showWordCount": false,
+                        "allowMultipleMasks": false,
+                        "addons": [],
+                        "privateDownload": false
+                    }
+                ]
+            },
+            {
+                "title": "Status",
+                "theme": "default",
+                "tooltip": "",
+                "customClass": "",
+                "collapsible": true,
+                "hidden": false,
+                "hiddenInPdf": false,
+                "hideLabel": false,
+                "disabled": false,
+                "modalEdit": false,
+                "key": "status",
+                "tags": [],
+                "properties": {},
+                "customConditional": "",
+                "conditional": {
+                    "json": "",
+                    "show": null,
+                    "when": null,
+                    "eq": ""
+                },
+                "logic": [],
+                "attributes": {},
+                "creatorPermissions": "",
+                "permissions": [
+                    {
+                        "user": {},
+                        "permissionLevel": ""
+                    }
+                ],
+                "type": "panel",
+                "label": "Panel",
+                "breadcrumb": "default",
+                "tabindex": "",
+                "input": false,
+                "tableView": false,
+                "components": [
+                    {
+                        "html": "<p>Access the panel's settings to set up the permissions for Microsoft 365 users who are authorized to complete the status of this ticket.</p>",
+                        "label": "Content",
+                        "customClass": "alert alert-info",
+                        "refreshOnChange": false,
+                        "hiddenInPdf": false,
+                        "key": "content1",
+                        "permissions": [
+                            {
+                                "user": {},
+                                "permissionLevel": ""
+                            }
+                        ],
+                        "type": "content",
+                        "input": false,
+                        "tableView": false,
+                        "placeholder": "",
+                        "prefix": "",
+                        "suffix": "",
+                        "multiple": false,
+                        "defaultValue": null,
+                        "protected": false,
+                        "unique": false,
+                        "persistent": true,
+                        "hidden": false,
+                        "clearOnHide": true,
+                        "refreshOn": "",
+                        "redrawOn": "",
+                        "modalEdit": false,
+                        "dataGridLabel": false,
+                        "labelPosition": "top",
+                        "description": "",
+                        "errorLabel": "",
+                        "tooltip": "",
+                        "hideLabel": false,
+                        "tabindex": "",
+                        "disabled": false,
+                        "autofocus": false,
+                        "dbIndex": false,
+                        "customDefaultValue": "",
+                        "calculateValue": "",
+                        "calculateServer": false,
+                        "widget": null,
+                        "attributes": {},
+                        "validateOn": "change",
+                        "validate": {
+                            "required": false,
+                            "custom": "",
+                            "customPrivate": false,
+                            "strictDateValidation": false,
+                            "multiple": false,
+                            "unique": false
+                        },
+                        "conditional": {
+                            "show": null,
+                            "when": null,
+                            "eq": ""
+                        },
+                        "overlay": {
+                            "style": "",
+                            "left": "",
+                            "top": "",
+                            "width": "",
+                            "height": ""
+                        },
+                        "allowCalculateOverride": false,
+                        "encrypted": false,
+                        "showCharCount": false,
+                        "showWordCount": false,
+                        "properties": {},
+                        "allowMultipleMasks": false,
+                        "addons": []
+                    },
+                    {
+                        "label": "Ticket Updates",
+                        "reorder": false,
+                        "addAnotherPosition": "bottom",
+                        "layoutFixed": false,
+                        "enableRowGroups": false,
+                        "initEmpty": false,
+                        "hiddenInPdf": false,
+                        "tableView": false,
+                        "defaultValue": [
+                            {
+                                "column1": "",
+                                "column2": "",
+                                "comment": "",
+                                "status": ""
+                            },
+                            {
+                                "column1": "",
+                                "column2": "",
+                                "comment": "",
+                                "status": ""
+                            }
+                        ],
+                        "key": "dataGridRepeatingTable",
+                        "permissions": [
+                            {
+                                "user": {},
+                                "permissionLevel": ""
+                            }
+                        ],
+                        "type": "datagrid",
+                        "input": true,
+                        "components": [
+                            {
+                                "label": "Comment",
+                                "autoExpand": true,
+                                "hiddenInPdf": false,
+                                "tableView": true,
+                                "key": "comment",
+                                "permissions": [
+                                    {
+                                        "user": {},
+                                        "permissionLevel": ""
+                                    }
+                                ],
+                                "type": "textarea",
+                                "rows": 1,
+                                "input": true,
+                                "placeholder": "",
+                                "prefix": "",
+                                "customClass": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": null,
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "refreshOn": "",
+                                "redrawOn": "",
+                                "modalEdit": false,
+                                "dataGridLabel": false,
+                                "labelPosition": "top",
+                                "description": "",
+                                "errorLabel": "",
+                                "tooltip": "",
+                                "hideLabel": false,
+                                "tabindex": "",
+                                "disabled": false,
+                                "autofocus": false,
+                                "dbIndex": false,
+                                "customDefaultValue": "",
+                                "calculateValue": "",
+                                "calculateServer": false,
+                                "widget": {
+                                    "type": "input"
+                                },
+                                "attributes": {},
+                                "validateOn": "change",
+                                "validate": {
+                                    "required": false,
+                                    "custom": "",
+                                    "customPrivate": false,
+                                    "strictDateValidation": false,
+                                    "multiple": false,
+                                    "unique": false,
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "minWords": "",
+                                    "maxWords": ""
+                                },
+                                "conditional": {
+                                    "show": null,
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "overlay": {
+                                    "style": "",
+                                    "left": "",
+                                    "top": "",
+                                    "width": "",
+                                    "height": ""
+                                },
+                                "allowCalculateOverride": false,
+                                "encrypted": false,
+                                "showCharCount": false,
+                                "showWordCount": false,
+                                "properties": {},
+                                "allowMultipleMasks": false,
+                                "addons": [],
+                                "mask": false,
+                                "inputType": "text",
+                                "inputFormat": "html",
+                                "inputMask": "",
+                                "displayMask": "",
+                                "spellcheck": true,
+                                "truncateMultipleSpaces": false,
+                                "wysiwyg": false,
+                                "editor": "",
+                                "fixedSize": true
+                            },
+                            {
+                                "label": "Status",
+                                "widget": "choicesjs",
+                                "hiddenInPdf": false,
+                                "tableView": true,
+                                "data": {
+                                    "values": [
+                                        {
+                                            "value": "new",
+                                            "label": "New"
+                                        },
+                                        {
+                                            "value": "open",
+                                            "label": "Open"
+                                        },
+                                        {
+                                            "value": "assigned",
+                                            "label": "Assigned"
+                                        },
+                                        {
+                                            "value": "in_progress",
+                                            "label": "In Progress"
+                                        },
+                                        {
+                                            "value": "on_hold",
+                                            "label": "On Hold"
+                                        },
+                                        {
+                                            "value": "pending_customer",
+                                            "label": "Pending Customer"
+                                        },
+                                        {
+                                            "value": "pending_vendor",
+                                            "label": "Pending Vendor"
+                                        },
+                                        {
+                                            "value": "resolved",
+                                            "label": "Resolved"
+                                        },
+                                        {
+                                            "value": "closed",
+                                            "label": "Closed"
+                                        }
+                                    ],
+                                    "label": "Drop Down List",
+                                    "json": "",
+                                    "url": "",
+                                    "resource": "",
+                                    "custom": ""
+                                },
+                                "key": "status",
+                                "permissions": [
+                                    {
+                                        "user": {},
+                                        "permissionLevel": ""
+                                    }
+                                ],
+                                "type": "select",
+                                "input": true,
+                                "placeholder": "",
+                                "prefix": "",
+                                "customClass": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": null,
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "refreshOn": "",
+                                "redrawOn": "",
+                                "modalEdit": false,
+                                "dataGridLabel": false,
+                                "labelPosition": "top",
+                                "description": "",
+                                "errorLabel": "",
+                                "tooltip": "",
+                                "hideLabel": false,
+                                "tabindex": "",
+                                "disabled": false,
+                                "autofocus": false,
+                                "dbIndex": false,
+                                "customDefaultValue": "",
+                                "calculateValue": "",
+                                "calculateServer": false,
+                                "attributes": {},
+                                "validateOn": "change",
+                                "validate": {
+                                    "required": false,
+                                    "custom": "",
+                                    "customPrivate": false,
+                                    "strictDateValidation": false,
+                                    "multiple": false,
+                                    "unique": false,
+                                    "onlyAvailableItems": false
+                                },
+                                "conditional": {
+                                    "show": null,
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "overlay": {
+                                    "style": "",
+                                    "left": "",
+                                    "top": "",
+                                    "width": "",
+                                    "height": ""
+                                },
+                                "allowCalculateOverride": false,
+                                "encrypted": false,
+                                "showCharCount": false,
+                                "showWordCount": false,
+                                "properties": {},
+                                "allowMultipleMasks": false,
+                                "addons": [],
+                                "idPath": "id",
+                                "clearOnRefresh": false,
+                                "limit": 100,
+                                "dataSrc": "values",
+                                "valueProperty": "",
+                                "lazyLoad": true,
+                                "filter": "",
+                                "searchEnabled": true,
+                                "searchDebounce": 0.3,
+                                "searchField": "",
+                                "minSearch": 0,
+                                "readOnlyValue": false,
+                                "authenticate": false,
+                                "ignoreCache": false,
+                                "template": "<span>{{ item.label }}</span>",
+                                "selectFields": "",
+                                "selectThreshold": 0.3,
+                                "uniqueOptions": false,
+                                "fuseOptions": {
+                                    "include": "score",
+                                    "threshold": 0.3
+                                },
+                                "indexeddb": {
+                                    "filter": {}
+                                },
+                                "customOptions": {},
+                                "useExactSearch": false
+                            }
+                        ],
+                        "placeholder": "",
+                        "prefix": "",
+                        "customClass": "",
+                        "suffix": "",
+                        "multiple": false,
+                        "protected": false,
+                        "unique": false,
+                        "persistent": true,
+                        "hidden": false,
+                        "clearOnHide": true,
+                        "refreshOn": "",
+                        "redrawOn": "",
+                        "modalEdit": false,
+                        "dataGridLabel": false,
+                        "labelPosition": "top",
+                        "description": "",
+                        "errorLabel": "",
+                        "tooltip": "",
+                        "hideLabel": false,
+                        "tabindex": "",
+                        "disabled": false,
+                        "autofocus": false,
+                        "dbIndex": false,
+                        "customDefaultValue": "",
+                        "calculateValue": "",
+                        "calculateServer": false,
+                        "widget": null,
+                        "attributes": {},
+                        "validateOn": "change",
+                        "validate": {
+                            "required": false,
+                            "custom": "",
+                            "customPrivate": false,
+                            "strictDateValidation": false,
+                            "multiple": false,
+                            "unique": false
+                        },
+                        "conditional": {
+                            "show": null,
+                            "when": null,
+                            "eq": ""
+                        },
+                        "overlay": {
+                            "style": "",
+                            "left": "",
+                            "top": "",
+                            "width": "",
+                            "height": ""
+                        },
+                        "allowCalculateOverride": false,
+                        "encrypted": false,
+                        "showCharCount": false,
+                        "showWordCount": false,
+                        "properties": {},
+                        "allowMultipleMasks": false,
+                        "addons": [],
+                        "tree": true,
+                        "lazyLoad": false,
+                        "disableAddingRemovingRows": false
+                    }
+                ],
+                "placeholder": "",
+                "prefix": "",
+                "suffix": "",
+                "multiple": false,
+                "defaultValue": null,
+                "protected": false,
+                "unique": false,
+                "persistent": false,
+                "clearOnHide": false,
+                "refreshOn": "",
+                "redrawOn": "",
+                "dataGridLabel": false,
+                "labelPosition": "top",
+                "description": "",
+                "errorLabel": "",
+                "autofocus": false,
+                "dbIndex": false,
+                "customDefaultValue": "",
+                "calculateValue": "",
+                "calculateServer": false,
+                "widget": null,
+                "validateOn": "change",
+                "validate": {
+                    "required": false,
+                    "custom": "",
+                    "customPrivate": false,
+                    "strictDateValidation": false,
+                    "multiple": false,
+                    "unique": false
+                },
+                "overlay": {
+                    "style": "",
+                    "left": "",
+                    "top": "",
+                    "width": "",
+                    "height": ""
+                },
+                "allowCalculateOverride": false,
+                "encrypted": false,
+                "showCharCount": false,
+                "showWordCount": false,
+                "allowMultipleMasks": false,
+                "addons": [],
+                "tree": false,
+                "lazyLoad": false,
+                "collapsed": false
+            },
+            {
+                "type": "button",
+                "key": "submit",
+                "disableOnInvalid": false,
+                "input": true,
+                "placeholder": "",
+                "prefix": "",
+                "customClass": "",
+                "suffix": "",
+                "multiple": false,
+                "defaultValue": null,
+                "protected": false,
+                "unique": false,
+                "persistent": false,
+                "hidden": false,
+                "clearOnHide": true,
+                "refreshOn": "",
+                "redrawOn": "",
+                "tableView": false,
+                "modalEdit": false,
+                "label": "Submit",
+                "dataGridLabel": true,
+                "labelPosition": "top",
+                "description": "",
+                "errorLabel": "",
+                "tooltip": "",
+                "hideLabel": false,
+                "tabindex": "",
+                "disabled": false,
+                "autofocus": false,
+                "dbIndex": false,
+                "customDefaultValue": "",
+                "calculateValue": "",
+                "calculateServer": false,
+                "widget": {
+                    "type": "input"
+                },
+                "attributes": {},
+                "validateOn": "change",
+                "validate": {
+                    "required": false,
+                    "custom": "",
+                    "customPrivate": false,
+                    "strictDateValidation": false,
+                    "multiple": false,
+                    "unique": false
+                },
+                "conditional": {
+                    "show": null,
+                    "when": null,
+                    "eq": ""
+                },
+                "overlay": {
+                    "style": "",
+                    "left": "",
+                    "top": "",
+                    "width": "",
+                    "height": ""
+                },
+                "allowCalculateOverride": false,
+                "encrypted": false,
+                "showCharCount": false,
+                "showWordCount": false,
+                "properties": {},
+                "allowMultipleMasks": false,
+                "addons": [],
+                "size": "md",
+                "leftIcon": "",
+                "rightIcon": "",
+                "block": false,
+                "action": "submit",
+                "theme": "primary"
+            }
+        ]
+    }
+}

@@ -2,6 +2,10 @@
     "title": "Maintenance Request",
     "description": "Request maintenance using the wizard",
     "tags": [
+        "construction",
+        "field services",
+        "maintenance management",
+        "job site operations",
         "maintenance",
         "wizard"
     ],

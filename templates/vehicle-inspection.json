@@ -2,6 +2,12 @@
     "title": "Vehicle Inspection",
     "description": "This template pulls data from an automotive REST API and uses cascading selected boxes",
     "tags": [
+        "construction",
+        "field services",
+        "transport and logistics",
+        "health and safety",
+        "maintenance management",
+        "job site operations",
         "vehicle",
         "inspection",
         "cascading",

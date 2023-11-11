@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const http = require('http');
+const httpServer = require('http-server');
 const puppeteer = require('puppeteer');
 
 const templatesDir = path.join(__dirname, 'templates');
@@ -9,23 +9,6 @@ const distTemplatesDir = path.join(distDir, 'templates');
 const templatesIndexFile = path.join(distDir, 'templates.json');
 
 const appUrl = 'https://web.teamforms.app';
-
-function serveDist() {
-    return http.createServer((req, res) => {
-        res.setHeader('Access-Control-Allow-Origin', '*');
-        res.setHeader('Access-Control-Allow-Methods', 'GET');
-        res.setHeader('Access-Control-Allow-Headers', 'content-type');
-
-        fs.readFile(distDir + req.url, (err, data) => {
-            if (err) {
-                res.statusCode = 500;
-                res.end(`Error getting the file: ${err}.`);
-                return;
-            }
-            res.end(data);
-        })
-    }).listen();
-}
 
 async function buildTemplates(distServerPort) {
     const files = fs.readdirSync(templatesDir)
@@ -73,6 +56,8 @@ async function buildTemplates(distServerPort) {
 fs.existsSync(distDir) || fs.mkdirSync(distDir);
 fs.existsSync(distTemplatesDir) || fs.mkdirSync(distTemplatesDir);
 
-const server = serveDist();
-buildTemplates(server.address().port)
-    .finally(() => server.close());
+// Serve dist so that puppeteer can generate screenshots of the templates
+const server = httpServer.createServer({ root: distDir, showDir: true, cors: true });
+server.listen(8080);
+
+buildTemplates(8080).finally(() => server.close());
