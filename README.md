@@ -16,3 +16,15 @@ This repository contains the community driven content for Team Forms.
 # Form Templates
 
 The `templates` directory contains the form templates that are available to all Team Forms users. We welcome contributions to these templates.
+
+## Development
+
+```sh
+# Update dist directory
+npm run build
+
+# Serve the dist directory locally for testing
+npm run serve
+```
+
+Run `npm run build` before committing changes so that the dist directory is kept up to date.
