@@ -2,6 +2,10 @@
     "title": "IT Hardware Request",
     "description": "Request specific IT hardware and ask more questions if somethings not availale",
     "tags": [
+        "information technology",
+        "job site operations",
+        "procurement",
+        "finance",
         "IT"
     ],
     "responsesTitleTemplate": "IT Hardware Request: {{ lastName }}, {{ firstName }}",
