@@ -14,7 +14,8 @@
         "photo",
         "camera",
         "image",
-        "picture"
+        "picture",
+        "audit"
     ],
     "responsesTitleTemplate": "EQ{{ equipmentIdentificationNumber }} Inspection {{ moment(dateTime).format(\"YYYY-MM-DD HH:mm:ss\") }}",
     "schema": {
