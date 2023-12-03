@@ -11,7 +11,8 @@
         "vehicle",
         "inspection",
         "cascading",
-        "select boxes"
+        "select boxes",
+        "audit"
     ],
     "schema": {
         "display": "form",
