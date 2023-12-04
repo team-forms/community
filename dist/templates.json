@@ -1,0 +1,404 @@
+[
+  {
+    "key": "covid19-declaration",
+    "title": "COVID-19 Declaration",
+    "description": "Collect Covid-19 and let the form assess the risk",
+    "tags": [
+      "health care",
+      "health and safety",
+      "covid-19",
+      "risk",
+      "assessment"
+    ],
+    "image": "templates/covid19-declaration.png"
+  },
+  {
+    "key": "document-upload-portal",
+    "title": "Document Upload Portal",
+    "description": "Create a secure file share Portal to collect media assets from third-party teams and streamline your file collection process.",
+    "tags": [
+      "Information Technology"
+    ],
+    "image": "templates/document-upload-portal.png"
+  },
+  {
+    "key": "employee-timesheet",
+    "title": "Employee Timesheet",
+    "description": "Take tables and calculated fields to the next level with this template for time tracking!",
+    "tags": [
+      "human resources",
+      "finance",
+      "construction",
+      "timesheet",
+      "employee",
+      "time",
+      "tracking"
+    ],
+    "image": "templates/employee-timesheet.png"
+  },
+  {
+    "key": "equipment-inspection",
+    "title": "Equipment Inspection",
+    "description": "Take inspection photos of each item and see them uploaded to SharePoint!",
+    "tags": [
+      "construction",
+      "field services",
+      "transport and logistics",
+      "health and safety",
+      "maintenance management",
+      "job site operations",
+      "inspection",
+      "equipment",
+      "sharepoint",
+      "photo",
+      "camera",
+      "image",
+      "picture",
+      "audit"
+    ],
+    "image": "templates/equipment-inspection.png"
+  },
+  {
+    "key": "expense-claim",
+    "title": "Expense Claim",
+    "description": "Lodge expense claims to go through an approval process",
+    "tags": [
+      "procurement",
+      "finance",
+      "job site operations",
+      "purchasing",
+      "expense",
+      "receipt"
+    ],
+    "image": "templates/expense-claim.png"
+  },
+  {
+    "key": "incident-report",
+    "title": "Incident Report",
+    "description": "Accident/Incident report form to ensure formal reporting of HSE events",
+    "tags": [
+      "health and safety",
+      "health care",
+      "field services",
+      "injury",
+      "Accident",
+      "Incident"
+    ],
+    "image": "templates/incident-report.png"
+  },
+  {
+    "key": "invoice",
+    "title": "Invoice Template",
+    "description": "Create standardized invoice pdf's and track what invoices are created",
+    "tags": [
+      "procurement",
+      "finance",
+      "job site operations",
+      "billing",
+      "project management",
+      "invoice",
+      "payment"
+    ],
+    "image": "templates/invoice.png"
+  },
+  {
+    "key": "it-hardware-request",
+    "title": "IT Hardware Request",
+    "description": "Request specific IT hardware and ask more questions if somethings not availale",
+    "tags": [
+      "information technology",
+      "job site operations",
+      "procurement",
+      "finance",
+      "IT"
+    ],
+    "image": "templates/it-hardware-request.png"
+  },
+  {
+    "key": "it-service-desk-ticket",
+    "title": "IT Service Desk Ticket",
+    "description": "Raise and manage the status of service desk tickets with just forms!",
+    "tags": [
+      "information technology",
+      "job site operations",
+      "it",
+      "ticket",
+      "service"
+    ],
+    "image": "templates/it-service-desk-ticket.png"
+  },
+  {
+    "key": "maintenance-request",
+    "title": "Maintenance Request",
+    "description": "Request maintenance using the wizard",
+    "tags": [
+      "construction",
+      "field services",
+      "maintenance management",
+      "job site operations",
+      "maintenance",
+      "wizard"
+    ],
+    "image": "templates/maintenance-request.png"
+  },
+  {
+    "key": "math-quiz",
+    "title": "Math Quiz",
+    "description": "This template shows how forms can be used in education as quizzes",
+    "tags": [
+      "education",
+      "quiz",
+      "math"
+    ],
+    "image": "templates/math-quiz.png"
+  },
+  {
+    "key": "medical-examination",
+    "title": "Medical Examination",
+    "description": "Physical examination form for a medical clinic",
+    "tags": [
+      "health care",
+      "health and safety",
+      "onboarding",
+      "medical",
+      "assessment",
+      "hospital",
+      "doctors"
+    ],
+    "image": "templates/medical-examination.png"
+  },
+  {
+    "key": "non-conformance-report",
+    "title": "Non-Conformance Report",
+    "description": "A Non-Conformance and Corrective Action Report documents when something went wrong or did not go to plan.",
+    "tags": [
+      "construction",
+      "field services",
+      "transport and logistics",
+      "health and safety",
+      "maintenance management",
+      "job site operations",
+      "safety",
+      "ohs",
+      "industrial"
+    ],
+    "image": "templates/non-conformance-report.png"
+  },
+  {
+    "key": "pre-flight-checklist",
+    "title": "Pre and Post Flight Checklist",
+    "description": "Pre and Post flight checklist for aviation safety",
+    "tags": [
+      "field services",
+      "transport and logistics",
+      "health and safety",
+      "maintenance management",
+      "job site operations",
+      "aviation",
+      "safety",
+      "checklist"
+    ],
+    "image": "templates/pre-flight-checklist.png"
+  },
+  {
+    "key": "pre-start-checklist",
+    "title": "Pre-start Checklist",
+    "description": "Check your work site and promote safe work habits",
+    "tags": [
+      "construction",
+      "field services",
+      "transport and logistics",
+      "health and safety",
+      "maintenance management",
+      "job site operations",
+      "safety",
+      "ohs",
+      "industrial"
+    ],
+    "image": "templates/pre-start-checklist.png"
+  },
+  {
+    "key": "procurement-request",
+    "title": "Procurement Request",
+    "description": "Procure multiple items in a single form and cap the spending limit at $1000",
+    "tags": [
+      "procurement",
+      "transport and logistics",
+      "job site operations",
+      "finance",
+      "purchase",
+      "spending",
+      "budget"
+    ],
+    "image": "templates/procurement-request.png"
+  },
+  {
+    "key": "property-inspection",
+    "title": "Property Inspection",
+    "description": "Basic property inspection report allowing you to capture images and print them in the pdf",
+    "tags": [
+      "realestate",
+      "construction",
+      "field services",
+      "maintenance management",
+      "property",
+      "inspection"
+    ],
+    "image": "templates/property-inspection.png"
+  },
+  {
+    "key": "purchase-agreement",
+    "title": "Purchase Agreement",
+    "description": "A purchase template that automatically generates a PDF document",
+    "tags": [
+      "procurement",
+      "finance",
+      "purchasing",
+      "agreement",
+      "contract",
+      "legal"
+    ],
+    "image": "templates/purchase-agreement.png"
+  },
+  {
+    "key": "purchase-request",
+    "title": "Purchase Request",
+    "description": "Create purchase requests and approvals",
+    "tags": [
+      "procurement",
+      "finance",
+      "job site operations",
+      "purchasing"
+    ],
+    "image": "templates/purchase-request.png"
+  },
+  {
+    "key": "quote-template",
+    "title": "Quote Template",
+    "description": "Create standardized quotes and track what has been raised",
+    "tags": [
+      "procurement",
+      "finance",
+      "job site operations",
+      "purchasing"
+    ],
+    "image": "templates/quote-template.png"
+  },
+  {
+    "key": "safety-induction",
+    "title": "Safety Induction",
+    "description": "Create awareness of safety culture at your work place",
+    "tags": [
+      "construction",
+      "job site operations",
+      "human resources",
+      "education",
+      "ohs",
+      "training"
+    ],
+    "image": "templates/safety-induction.png"
+  },
+  {
+    "key": "sick-leave-request",
+    "title": "Sick Leave Request",
+    "description": "Submit a leave request and request. You can trigger PowerAutomate to start a approval flow!",
+    "tags": [
+      "information technology",
+      "health and safety",
+      "leave",
+      "sick",
+      "human resources"
+    ],
+    "image": "templates/sick-leave-request.png"
+  },
+  {
+    "key": "site-inspection",
+    "title": "Site Inspection",
+    "description": "Inspect a work site to ensure compliance and safety",
+    "tags": [
+      "construction",
+      "field services",
+      "transport and logistics",
+      "health and safety",
+      "maintenance management",
+      "job site operations",
+      "safety",
+      "ohs",
+      "industrial",
+      "audit"
+    ],
+    "image": "templates/site-inspection.png"
+  },
+  {
+    "key": "take-5-safety-checklist",
+    "title": "Take 5 Safety Checklist",
+    "description": "Identify health and safety hazards before starting work on a site.",
+    "tags": [
+      "construction",
+      "field services",
+      "transport and logistics",
+      "health and safety",
+      "maintenance management",
+      "job site operations",
+      "safety",
+      "ohs",
+      "industrial"
+    ],
+    "image": "templates/take-5-safety-checklist.png"
+  },
+  {
+    "key": "vehicle-inspection",
+    "title": "Vehicle Inspection",
+    "description": "This template pulls data from an automotive REST API and uses cascading selected boxes",
+    "tags": [
+      "construction",
+      "field services",
+      "transport and logistics",
+      "health and safety",
+      "maintenance management",
+      "job site operations",
+      "vehicle",
+      "inspection",
+      "cascading",
+      "select boxes",
+      "audit"
+    ],
+    "image": "templates/vehicle-inspection.png"
+  },
+  {
+    "key": "work-permit",
+    "title": "Work Permit",
+    "description": "Promote a safe work culture with work permits",
+    "tags": [
+      "construction",
+      "field services",
+      "health and safety",
+      "maintenance management",
+      "job site operations",
+      "safety",
+      "ohs",
+      "industrial",
+      "permit",
+      "work",
+      "site"
+    ],
+    "image": "templates/work-permit.png"
+  },
+  {
+    "key": "workplace-safety-training",
+    "title": "Work Place Safety Training Module",
+    "description": "This template shows you can build training modules as multi-page wizards",
+    "tags": [
+      "health and safety",
+      "construction",
+      "education",
+      "human resources",
+      "wizard",
+      "training",
+      "multi-page",
+      "module",
+      "quiz"
+    ],
+    "image": "templates/workplace-safety-training.png"
+  }
+]
