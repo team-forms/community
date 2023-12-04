@@ -9,7 +9,8 @@
         "wizard",
         "training",
         "multi-page",
-        "module"
+        "module",
+        "quiz"
     ],
     "responsesTitleTemplate": "Work Place Safety Training Module: {{ name }}",
     "schema": {

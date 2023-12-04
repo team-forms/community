@@ -53,9 +53,24 @@
       "photo",
       "camera",
       "image",
-      "picture"
+      "picture",
+      "audit"
     ],
     "image": "templates/equipment-inspection.png"
+  },
+  {
+    "key": "expense-claim",
+    "title": "Expense Claim",
+    "description": "Lodge expense claims to go through an approval process",
+    "tags": [
+      "procurement",
+      "finance",
+      "job site operations",
+      "purchasing",
+      "expense",
+      "receipt"
+    ],
+    "image": "templates/expense-claim.png"
   },
   {
     "key": "incident-report",
@@ -232,6 +247,20 @@
     "image": "templates/property-inspection.png"
   },
   {
+    "key": "purchase-agreement",
+    "title": "Purchase Agreement",
+    "description": "A purchase template that automatically generates a PDF document",
+    "tags": [
+      "procurement",
+      "finance",
+      "purchasing",
+      "agreement",
+      "contract",
+      "legal"
+    ],
+    "image": "templates/purchase-agreement.png"
+  },
+  {
     "key": "purchase-request",
     "title": "Purchase Request",
     "description": "Create purchase requests and approvals",
@@ -295,7 +324,8 @@
       "job site operations",
       "safety",
       "ohs",
-      "industrial"
+      "industrial",
+      "audit"
     ],
     "image": "templates/site-inspection.png"
   },
@@ -330,9 +360,29 @@
       "vehicle",
       "inspection",
       "cascading",
-      "select boxes"
+      "select boxes",
+      "audit"
     ],
     "image": "templates/vehicle-inspection.png"
+  },
+  {
+    "key": "work-permit",
+    "title": "Work Permit",
+    "description": "Promote a safe work culture with work permits",
+    "tags": [
+      "construction",
+      "field services",
+      "health and safety",
+      "maintenance management",
+      "job site operations",
+      "safety",
+      "ohs",
+      "industrial",
+      "permit",
+      "work",
+      "site"
+    ],
+    "image": "templates/work-permit.png"
   },
   {
     "key": "workplace-safety-training",
@@ -346,7 +396,8 @@
       "wizard",
       "training",
       "multi-page",
-      "module"
+      "module",
+      "quiz"
     ],
     "image": "templates/workplace-safety-training.png"
   }
